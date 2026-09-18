@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- @include partials/header.html -->
+
+<!-- ===== Первый экран. bitrix:breadcrumb + contact-card ===== -->
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="#">Главная</a><span class="breadcrumbs__sep"></span><span>Контакты</span></nav>
+
+  <h1 class="h1">Контакты</h1>
+  <p class="lead">Отвечаем в рабочее время в течение часа, ТЗ и чертежи — на почту.</p>
+
+  <div class="grid grid--contacts">
+    <div class="card contact-card">
+      <span class="contact-card__icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.2 3.5 9 7l-2 2c.8 2 2.4 3.6 4.4 4.4l2-2 3.5 1.8v3.3c0 .8-.7 1.4-1.5 1.3C8.8 17.2 4 12.4 3.2 5.6 3.1 4.8 3.7 4 4.5 4z"></path></svg></span>
+      <div class="contact-card__label">Телефон</div>
+      <a class="contact-card__value contact-card__value--phone" href="tel:+78124317127">8 (812) 431 71 27</a>
+      <div class="contact-card__note">Звонки и мессенджеры</div>
+      <div class="contact-card__foot">
+        <div class="contact-card__messengers">
+          <a class="icon-btn" href="#" aria-label="Telegram"><span class="icon-btn__circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#14161A" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 3.5 2.8 9.2l4.4 1.5 1.5 4.4z"></path><path d="M7.2 10.7 17.5 3.5"></path></svg></span></a>
+          <a class="icon-btn" href="#" aria-label="WhatsApp"><span class="icon-btn__circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#14161A" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M17 9.6a7 7 0 0 1-10.3 6.2L3 16.8l1.1-3.6A7 7 0 1 1 17 9.6z"></path><path d="M7.6 7.4c.5 2.6 2.3 4.4 4.9 4.9"></path></svg></span></a>
+          <a class="icon-btn" href="#" aria-label="MAX"><span class="icon-btn__circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#14161A" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 15V5.6L10 12l6.8-6.4V15"></path></svg></span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card contact-card">
+      <span class="contact-card__icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.8" y="5" width="16.4" height="12" rx="2"></rect><path d="M3.4 6.2 11 11.6l7.6-5.4"></path></svg></span>
+      <div class="contact-card__label">Почта</div>
+      <a class="contact-card__value contact-card__value--sm" href="mailto:info@netizbattery.ru">info@netizbattery.ru</a>
+      <div class="contact-card__note">ТЗ, спецификации, счета</div>
+      <div class="contact-card__foot">
+        <a class="link-arrow" href="mailto:info@netizbattery.ru">Написать письмо <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="card contact-card">
+      <span class="contact-card__icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 19.5S4.5 13.8 4.5 9.2A6.5 6.5 0 0 1 17.5 9.2C17.5 13.8 11 19.5 11 19.5z"></path><circle cx="11" cy="9.2" r="2.4"></circle></svg></span>
+      <div class="contact-card__label">Адрес</div>
+      <div class="contact-card__value contact-card__value--sm">Санкт-Петербург,<br>ул. Савушкина 115, к. 4</div>
+      <div class="contact-card__note">Производство, склад, самовывоз</div>
+      <div class="contact-card__foot">
+        <a class="link-arrow" href="#map">Как проехать <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </div>
+
+    <div class="card contact-card">
+      <span class="contact-card__icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7.6"></circle><path d="M11 6.6V11l3.2 2"></path></svg></span>
+      <div class="contact-card__label">Режим работы</div>
+      <div class="contact-card__value contact-card__value--sm">Ежедневно<br>9:00–20:00</div>
+      <div class="contact-card__note">Отгрузка со склада — по будням до 18:00</div>
+      <div class="contact-card__foot">
+        <span class="chip">Без выходных</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== map-embed + как добраться ===== -->
+  <div class="contacts-map" id="map">
+    <figure class="map-embed">
+      <div class="map-embed__frame">
+        <span class="map-embed__pin" aria-hidden="true"></span>
+        <span class="map-embed__hint">место под Яндекс.Карту</span>
+      </div>
+      <figcaption class="map-embed__caption">
+        <b>Савушкина 115, к. 4</b>
+        <span>Вход со двора, 2 этаж</span>
+      </figcaption>
+    </figure>
+    <div class="route">
+      <h2 class="h3 route__title">Как добраться</h2>
+      <div class="route__list">
+        <div class="route__item">
+          <span class="route__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="4" r="1.8"></circle><path d="M10.4 7.4 8 11l2.6 1.8L9.2 17"></path><path d="M8 11 5 12.4"></path><path d="M10.6 12.8 14 14"></path></svg></span>
+          <div>
+            <div class="route__name">От метро «Старая Деревня»</div>
+            <p class="route__text">10 минут пешком: по Савушкина в сторону Приморского проспекта, до корпуса 4.</p>
+          </div>
+        </div>
+        <div class="route__item">
+          <span class="route__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12.5h14v3H3z"></path><path d="M4.6 12.5 6.2 8h7.6l1.6 4.5"></path><circle cx="6" cy="15.5" r="1.2"></circle><circle cx="14" cy="15.5" r="1.2"></circle></svg></span>
+          <div>
+            <div class="route__name">На машине</div>
+            <p class="route__text">Парковка у корпуса 4, свободные места есть в течение рабочего дня.</p>
+          </div>
+        </div>
+        <div class="route__item">
+          <span class="route__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="9" height="7"></rect><path d="M11.5 9h3.2l2.8 2.6V14h-6z"></path><circle cx="6" cy="15.6" r="1.2"></circle><circle cx="14.4" cy="15.6" r="1.2"></circle></svg></span>
+          <div>
+            <div class="route__name">Для транспортных компаний</div>
+            <p class="route__text">Ворота склада: Савушкина 115, к. 4, лит. А. Приём и отгрузка по будням.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== contact-form на светлой плашке ===== -->
+  <div class="plate plate--soft contact-form" id="write">
+    <div class="contact-form__text">
+      <h2 class="h2 h2--plate">Напишите нам</h2>
+      <p class="lead">Ответим в течение рабочего дня. Для расчёта батареи по ТЗ удобнее форма на главной.</p>
+    </div>
+    <form class="form card contact-form__card" action="#" method="post">
+      <!-- состояния после отправки: form.is-success / form.is-error -->
+      <div class="form__message form__message--ok alert alert--ok">Сообщение отправлено. Ответим на указанный контакт в течение рабочего дня.</div>
+      <div class="form__message form__message--err alert alert--err">Не удалось отправить. Проверьте телефон или e-mail и попробуйте ещё раз.</div>
+      <div class="form__stack">
+        <label class="field"><input class="field__input" type="text" name="name" placeholder=" "><span class="field__label">Имя</span></label>
+        <label class="field"><input class="field__input" type="text" name="contact" placeholder=" "><span class="field__label">Телефон или e-mail</span></label>
+        <label class="field field--select">
+          <select class="field__select" name="topic">
+            <option>Подбор батареи</option>
+            <option>Статус заказа</option>
+            <option>Сотрудничество</option>
+            <option>Другое</option>
+          </select>
+          <span class="field__label">Тема</span>
+        </label>
+        <label class="field field--area"><textarea class="field__input" name="message" placeholder=" "></textarea><span class="field__label">Сообщение</span></label>
+        <div class="form__row" style="margin-top:6px">
+          <label class="btn btn--attach">
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5 12 20a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"></path></svg>
+            Прикрепить файл
+            <input class="visually-hidden" type="file" name="file">
+          </label>
+          <div class="form__note">ТЗ, чертёж или фото (pdf, jpg, dwg)</div>
+        </div>
+        <label class="check">
+          <input class="check__input" type="checkbox" name="agree">
+          <span class="check__box"></span>
+          <span>Согласен с <a href="#">политикой обработки персональных данных</a></span>
+        </label>
+        <button class="btn btn--primary btn--block" type="submit" style="margin-top:12px">Отправить</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Реквизиты. requisites ===== -->
+<section class="section container">
+  <div class="requisites" data-requisites>
+    <h2 class="h2">Реквизиты</h2>
+    <div class="requisites__head" style="margin-top:clamp(24px,2vw,36px)">
+      <a class="link-arrow link-arrow--lg" href="#">Скачать карточку предприятия (PDF) <span class="link-arrow__arrow">↓</span></a>
+      <button class="btn btn--secondary" type="button" data-copy-all="">Скопировать все реквизиты</button>
+    </div>
+    <div class="requisites__table">
+      <!-- req__row: item ×N — значения-заглушки, заменить реальными реквизитами -->
+      <div class="req__row">
+        <div class="req__label">Полное наименование</div>
+        <div class="req__val">
+          <span>Общество с ограниченной ответственностью «Научно-производственный центр НЭТИЗ»</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="Общество с ограниченной ответственностью «Научно-производственный центр НЭТИЗ»"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Сокращённое</div>
+        <div class="req__val">
+          <span>ООО НПЦ «НЭТИЗ»</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="ООО НПЦ «НЭТИЗ»"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">ИНН</div>
+        <div class="req__val">
+          <span>7814123456</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="7814123456"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">КПП</div>
+        <div class="req__val">
+          <span>781401001</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="781401001"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">ОГРН</div>
+        <div class="req__val">
+          <span>1027800000000</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="1027800000000"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Юридический адрес</div>
+        <div class="req__val">
+          <span>197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А, пом. 32Н</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А, пом. 32Н"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Фактический адрес</div>
+        <div class="req__val">
+          <span>197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Банк</div>
+        <div class="req__val">
+          <span>Филиал «Санкт-Петербургский» АО «Альфа-Банк»</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="Филиал «Санкт-Петербургский» АО «Альфа-Банк»"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Р/с</div>
+        <div class="req__val">
+          <span>40702810000000000001</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="40702810000000000001"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">К/с</div>
+        <div class="req__val">
+          <span>30101810600000000786</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="30101810600000000786"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">БИК</div>
+        <div class="req__val">
+          <span>044030786</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="044030786"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Генеральный директор</div>
+        <div class="req__val">
+          <span>Фамилия Имя Отчество</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="Фамилия Имя Отчество"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Отдел продаж. person-card ===== -->
+<!-- Отдел продаж — блок опциональный, по согласованию с заказчиком -->
+<section class="section container">
+    <div class="section__head">
+      <h2 class="h2">Отдел продаж</h2>
+      <div class="section__meta">Пишите напрямую — быстрее, чем через общую почту</div>
+    </div>
+    <div class="grid grid--persons">
+      <article class="card person-card">
+        <div class="person-card__photo"><img src="assets/img/placeholder-104x104.svg" alt="" width="72" height="72" loading="lazy"></div>
+        <h3 class="person-card__name">Имя Фамилия</h3>
+        <div class="person-card__role">Менеджер по работе с юрлицами</div>
+        <div class="person-card__links">
+          <a class="person-card__phone" href="tel:+78124317127">8 (812) 431 71 27, доб. 101</a>
+          <a href="mailto:sales@netizbattery.ru">sales@netizbattery.ru</a>
+        </div>
+      </article>
+      <article class="card person-card">
+        <div class="person-card__photo"><img src="assets/img/placeholder-104x104.svg" alt="" width="72" height="72" loading="lazy"></div>
+        <h3 class="person-card__name">Имя Фамилия</h3>
+        <div class="person-card__role">Инженер по подбору</div>
+        <div class="person-card__links">
+          <a class="person-card__phone" href="tel:+78124317127">8 (812) 431 71 27, доб. 102</a>
+          <a href="mailto:engineer@netizbattery.ru">engineer@netizbattery.ru</a>
+        </div>
+      </article>
+      <article class="card person-card">
+        <div class="person-card__photo"><img src="assets/img/placeholder-104x104.svg" alt="" width="72" height="72" loading="lazy"></div>
+        <h3 class="person-card__name">Имя Фамилия</h3>
+        <div class="person-card__role">Тендеры и закупки</div>
+        <div class="person-card__links">
+          <a class="person-card__phone" href="tel:+78124317127">8 (812) 431 71 27, доб. 103</a>
+          <a href="mailto:tender@netizbattery.ru">tender@netizbattery.ru</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+<!-- @include partials/footer.html -->
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

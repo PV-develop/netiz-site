@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Как составить ТЗ на аккумуляторную сборку — НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- @include partials/header.html -->
+
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="breadcrumbs__sep"></span><a href="blog.html">Блог</a><span class="breadcrumbs__sep"></span><span>Как составить ТЗ на аккумуляторную сборку</span></nav>
+  <h1 class="h1">Как составить ТЗ на аккумуляторную сборку</h1>
+  <p class="lead">Шесть параметров, без которых расчёт придётся переделывать, и как их записать, чтобы инженер понял с первого раза.</p>
+
+  <div class="pdp__meta" style="margin-top:16px"><time datetime="2026-07-20">20 июля 2026</time><span>Статья</span><span>7 минут</span><span>Ведущий инженер НЭТИЗ</span></div>
+  <div class="svc-hero" style="grid-template-columns:1fr">
+    <div class="svc-hero__media" style="height:auto;aspect-ratio:16/7"><img src="assets/img/news-tz.jpg" alt=""></div>
+  </div>
+  <article class="article">
+    <p>Чаще всего расчёт сборки переделывают не из-за ошибок инженера, а из-за неполного ТЗ. Ниже — шесть параметров, которых достаточно для точного расчёта с первого раза, и типичные ошибки в каждом.</p>
+    <h2 class="article__h2">1. Напряжение и ёмкость</h2>
+    <p>Указывайте номинальное напряжение прибора и требуемое время работы от батареи, а не «как у старой». Если прибор потребляет 2 А и должен работать 10 часов — это 20 А·ч плюс запас на температуру и старение, обычно 20–30 %.</p>
+    <h2 class="article__h2">2. Режим разряда</h2>
+    <p>Самый недооценённый параметр. Постоянный ток 2 А и импульс 20 А на 3 секунды — это разные батареи: импульс определяет число параллельных ячеек и сечение шин. Если есть осциллограмма потребления — приложите её.</p>
+    <div class="article__note">
+      <div class="article__note-title">Почему это важно</div>
+      <p>Li-SOCl₂ элементы плохо держат импульсы — для приборов с GSM-модулем к ним ставят конденсатор или гибридный элемент. Без данных о пиках мы этого не узнаем.</p>
+    </div>
+    <h2 class="article__h2">3. Габариты отсека и крепление</h2>
+    <p>Внутренние размеры отсека, положение ввода кабеля, способ фиксации. Чертёж или фото отсека с линейкой заменяют половину переписки.</p>
+    <h2 class="article__h2">4. Разъём и кабель</h2>
+    <p>Тип и артикул разъёма, длина и сечение кабеля, распиновка. Если разъём нестандартный — фото с двух сторон.</p>
+    <h2 class="article__h2">5. Температура и условия</h2>
+    <p>Диапазон рабочих температур, влажность, вибрация, требования к пожарной безопасности. От температуры зависит химия: ниже −20 °C LiFePO4 не заряжается без подогрева, а Li-SOCl₂ работает от −55 °C.</p>
+    <h2 class="article__h2">6. Объём и срок</h2>
+    <p>Количество в партии и желаемая дата отгрузки. От объёма зависят цена и способ сборки, от срока — выбор ячеек из наличия или под заказ.</p>
+    <div class="article__table">
+      <table>
+        <thead><tr><th>Параметр</th><th>Пример записи в ТЗ</th></tr></thead>
+        <tbody>
+          <tr><td>Напряжение и ёмкость</td><td>48 В, 30 А·ч (10 ч при 3 А)</td></tr>
+          <tr><td>Режим разряда</td><td>3 А постоянно, 60 А импульс 5 с раз в минуту</td></tr>
+          <tr><td>Габариты отсека</td><td>300×200×150 мм, ввод сверху</td></tr>
+          <tr><td>Разъём</td><td>Amphenol SurLok, кабель 400 мм, 16 мм²</td></tr>
+          <tr><td>Температура</td><td>−30…+55 °C, вибрация по ГОСТ 30631</td></tr>
+          <tr><td>Объём и срок</td><td>20 шт. до 30 сентября</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <blockquote class="article__quote">
+      <div class="article__quote-mark" aria-hidden="true">«</div>
+      <div class="article__quote-text">Если данных нет — пришлите старую батарею или модель прибора. Снимем параметры сами, но это добавит два-три дня к расчёту.</div>
+      <div class="article__quote-author"><div class="article__quote-name">Ведущий инженер</div><div class="article__quote-org">конструкторская группа НЭТИЗ</div></div>
+    </blockquote>
+    <h3 class="article__h3">Что дальше</h3>
+    <p>Отправьте ТЗ через <a href="service.html#brief">форму на странице услуги</a> или на info@netizbattery.ru — расчёт со схемой, ценой и сроком пришлём в течение рабочего дня.</p>
+  </article>
+</section>
+
+<section class="section container">
+  <div class="section__head"><h2 class="h2">Читайте также</h2><a class="link-arrow link-arrow--lg" href="blog.html">Все статьи →</a></div>
+  <div class="grid grid--news">
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-chem.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-07-12">12 июля 2026 · Статья</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Как выбрать химию батареи для работы при −40 °C</a></h3>
+      <p class="news-card__text">Сравнение Li-SOCl₂, LiFePO4 и Ni-MH в полевых условиях.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-tests.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-06-30">30 июня 2026 · Статья</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Что проверяют испытания сборки перед отгрузкой</a></h3>
+      <p class="news-card__text">Ёмкость, НРЦ, циклирование и климатика: что попадает в протокол.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-tz.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-06-18">18 июня 2026 · Новость</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Расширили линейку Unique Energy до 100 А·ч</a></h3>
+      <p class="news-card__text">Новые типоразмеры для замены свинцовых АКБ в системах резерва.</p>
+    </article>
+  </div>
+</section>
+
+<!-- @include partials/block-cases.html -->
+
+<!-- @include partials/block-catalog.html -->
+
+<!-- @include partials/lead-form.html -->
+
+<!-- @include partials/footer.html -->
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

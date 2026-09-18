@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Блог — НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- @include partials/header.html -->
+
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="breadcrumbs__sep"></span><span>Блог</span></nav>
+  <h1 class="h1">Блог</h1>
+  <p class="lead">Статьи о выборе химии, составлении ТЗ и эксплуатации батарей — и новости компании.</p>
+
+  <div class="tag-cloud">
+    <a class="tag is-active" href="#">Все <span class="tag__count">24</span></a>
+    <a class="tag" href="#">Статьи <span class="tag__count">16</span></a>
+    <a class="tag" href="#">Новости <span class="tag__count">8</span></a>
+    <a class="tag" href="#">Выбор батареи <span class="tag__count">7</span></a>
+    <a class="tag" href="#">ТЗ и расчёт <span class="tag__count">5</span></a>
+    <a class="tag" href="#">Испытания <span class="tag__count">4</span></a>
+  </div>
+  <!-- grid--news: bitrix:news.list, item ×N -->
+  <div class="grid grid--news" style="margin-top:clamp(32px,2.9vw,56px)">
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-tz.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-07-20">20 июля 2026 · Статья</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Как составить ТЗ на аккумуляторную сборку</a></h3>
+      <p class="news-card__text">Шесть параметров, без которых расчёт придётся переделывать.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-chem.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-07-12">12 июля 2026 · Статья</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Как выбрать химию батареи для работы при −40 °C</a></h3>
+      <p class="news-card__text">Сравнение Li-SOCl₂, LiFePO4 и Ni-MH в полевых условиях.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-tests.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-06-30">30 июня 2026 · Статья</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Что проверяют испытания сборки перед отгрузкой</a></h3>
+      <p class="news-card__text">Ёмкость, НРЦ, циклирование и климатика: что попадает в протокол.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-tz.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-06-18">18 июня 2026 · Новость</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Расширили линейку Unique Energy до 100 А·ч</a></h3>
+      <p class="news-card__text">Новые типоразмеры для замены свинцовых АКБ в системах резерва.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-chem.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-06-02">2 июня 2026 · Новость</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Итоги участия в отраслевой конференции</a></h3>
+      <p class="news-card__text">Показали сборки для гидрологии и морской навигации.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-tests.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <time class="news-card__date" datetime="2026-05-15">15 мая 2026 · Статья</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Перевозка литиевых батарей: UN3480 и UN3090 без сюрпризов</a></h3>
+      <p class="news-card__text">Какие документы нужны транспортной компании и что даём мы.</p>
+    </article>
+  </div>
+    <nav class="pagination" aria-label="Страницы">
+      <a class="pagination__arrow is-disabled" href="#">←</a>
+      <a class="pagination__item is-active" href="#">1</a>
+      <a class="pagination__item" href="#">2</a>
+      <a class="pagination__item" href="#">3</a>
+      <a class="pagination__arrow" href="#">→</a>
+    </nav>
+</section>
+
+<!-- @include partials/block-catalog.html -->
+
+<!-- @include partials/lead-form.html -->
+
+<!-- @include partials/footer.html -->
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

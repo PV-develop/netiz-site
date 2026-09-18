@@ -1,0 +1,47 @@
+<!-- Блок «Подберём батарею» — общий для главной, разделов каталога, карточки товара -->
+<!-- ===== Лид-форма «Подберём батарею». bitrix:main.feedback / свой компонент. Файл — input[type=file] ===== -->
+<section class="section container" id="lead">
+  <div class="plate plate--dark plate--photo lead-block" style="background-image:url('assets/img/lead-bg.jpg')">
+    <div class="lead-block__text">
+      <h2 class="h2 h2--plate">Подберём батарею под ваше оборудование</h2>
+      <p class="lead" style="margin-top:clamp(20px,1.7vw,32px)">Пришлите модель прибора, габариты отсека или старую батарею — инженер предложит замену и посчитает стоимость.</p>
+      <div class="metrics" style="margin-top:clamp(36px,3.3vw,64px)">
+        <div class="metric metric--lg"><div class="metric__value metric__value--accent">1 день</div><div class="metric__label">на расчёт</div></div>
+        <div class="metric metric--lg"><div class="metric__value">от 1 шт.</div><div class="metric__label">минимальная партия</div></div>
+      </div>
+    </div>
+    <form class="form glass lead-block__form" action="#" method="post" enctype="multipart/form-data" novalidate>
+      <div class="glass__title">Запрос на подбор</div>
+      <div class="form__stack">
+        <label class="field field--glass">
+          <input class="field__input" type="text" name="name" placeholder=" " required>
+          <span class="field__label">Имя</span>
+        </label>
+        <label class="field field--glass">
+          <input class="field__input" type="text" name="contact" placeholder=" " required>
+          <span class="field__label">Телефон или e-mail</span>
+        </label>
+        <label class="field field--glass">
+          <input class="field__input" type="text" name="model" placeholder=" ">
+          <span class="field__label">Модель оборудования или параметры батареи</span>
+        </label>
+        <div class="form__row" style="margin-top:10px">
+          <label class="btn btn--outline-dark">
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5 12 20a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg>
+            Прикрепить чертёж
+            <input class="visually-hidden" type="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg">
+          </label>
+          <div class="form__note">ТЗ, чертёж или фото (pdf, jpg, dwg)</div>
+        </div>
+        <label class="check check--glass" style="margin-top:14px">
+          <input class="check__input" type="checkbox" name="agree" required>
+          <span class="check__box"></span>
+          <span>Согласен с политикой обработки персональных данных</span>
+        </label>
+        <button class="btn btn--secondary btn--block" type="submit" style="margin-top:18px">Отправить запрос</button>
+        <div class="form__message form__message--ok">Запрос отправлен. Инженер свяжется с вами в течение дня.</div>
+        <div class="form__message form__message--err">Не удалось отправить. Проверьте поля или позвоните: 8 (812) 431 71 27</div>
+      </div>
+    </form>
+  </div>
+</section>

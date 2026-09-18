@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Реквизиты — НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- @include partials/header.html -->
+
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="breadcrumbs__sep"></span><span>Покупателям</span><span class="breadcrumbs__sep"></span><span>Реквизиты</span></nav>
+  <h1 class="h1">Реквизиты</h1>
+  <p class="lead">Данные для договоров, счетов и платёжных поручений. Карточка предприятия — в PDF.</p>
+
+  <div class="text-layout">
+    <nav class="side-nav" aria-label="Покупателям">
+      <div class="side-nav__title">Покупателям</div>
+      <a class="side-nav__link" href="page.html">Оплата</a>
+      <a class="side-nav__link" href="page.html">Доставка</a>
+      <a class="side-nav__link is-active" href="requisites.html">Реквизиты</a>
+      <a class="side-nav__link" href="certificates.html">Сертификаты</a>
+      <a class="side-nav__link" href="#">Возврат и гарантия</a>
+      <a class="side-nav__link" href="#">Политика конфиденциальности</a>
+    </nav>
+    <div style="min-width:0">
+<div class="requisites" data-requisites>
+        <div class="requisites__head" style="margin-top:clamp(24px,2vw,36px)">
+      <a class="link-arrow link-arrow--lg" href="#">Скачать карточку предприятия (PDF) <span class="link-arrow__arrow">↓</span></a>
+      <button class="btn btn--secondary" type="button" data-copy-all="">Скопировать все реквизиты</button>
+    </div>
+    <div class="requisites__table">
+      <!-- req__row: item ×N — значения-заглушки, заменить реальными реквизитами -->
+      <div class="req__row">
+        <div class="req__label">Полное наименование</div>
+        <div class="req__val">
+          <span>Общество с ограниченной ответственностью «Научно-производственный центр НЭТИЗ»</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="Общество с ограниченной ответственностью «Научно-производственный центр НЭТИЗ»"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Сокращённое</div>
+        <div class="req__val">
+          <span>ООО НПЦ «НЭТИЗ»</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="ООО НПЦ «НЭТИЗ»"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">ИНН</div>
+        <div class="req__val">
+          <span>7814123456</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="7814123456"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">КПП</div>
+        <div class="req__val">
+          <span>781401001</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="781401001"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">ОГРН</div>
+        <div class="req__val">
+          <span>1027800000000</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="1027800000000"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Юридический адрес</div>
+        <div class="req__val">
+          <span>197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А, пом. 32Н</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А, пом. 32Н"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Фактический адрес</div>
+        <div class="req__val">
+          <span>197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="197136, Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Банк</div>
+        <div class="req__val">
+          <span>Филиал «Санкт-Петербургский» АО «Альфа-Банк»</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="Филиал «Санкт-Петербургский» АО «Альфа-Банк»"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Р/с</div>
+        <div class="req__val">
+          <span>40702810000000000001</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="40702810000000000001"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">К/с</div>
+        <div class="req__val">
+          <span>30101810600000000786</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="30101810600000000786"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">БИК</div>
+        <div class="req__val">
+          <span>044030786</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="044030786"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+      <div class="req__row">
+        <div class="req__label">Генеральный директор</div>
+        <div class="req__val">
+          <span>Фамилия Имя Отчество</span>
+          <button class="req__copy" type="button" aria-label="Скопировать" data-copy="Фамилия Имя Отчество"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 3.2V2.5h-8v8h.7"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<!-- @include partials/lead-form.html -->
+
+<!-- @include partials/footer.html -->
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!-- ============================================================
+     partials/footer.html → footer.php шаблона.
+     Блок «Пришлем каталог» — общий для всех страниц, тоже живёт здесь.
+     Форма: bitrix:main.feedback или свой компонент; классы состояний
+     .form.is-success / .form.is-error, поля .field.is-error.
+     Колонки ссылок: bitrix:menu (bottom_catalog, bottom_company).
+     ============================================================ -->
+
+<section class="section container">
+  <div class="plate plate--dark subscribe">
+    <div class="subscribe__text">
+      <h2 class="h3">Пришлем каталог и ответим на любые вопросы</h2>
+      <p class="lead" style="margin-top:16px">Инженер перезвонит в течение часа</p>
+    </div>
+    <form class="form subscribe__form" action="#" method="post" novalidate>
+      <div class="subscribe__row">
+        <label class="field field--dark">
+          <input class="field__input" type="text" name="name" placeholder=" " required>
+          <span class="field__label">Имя</span>
+        </label>
+        <label class="field field--dark">
+          <input class="field__input" type="text" name="contact" placeholder=" " required>
+          <span class="field__label">Телефон или e-mail</span>
+        </label>
+        <button class="btn btn--secondary" type="submit">Оставить заявку</button>
+      </div>
+      <label class="check check--dark" style="margin-top:20px">
+        <input class="check__input" type="checkbox" name="agree" required>
+        <span class="check__box"></span>
+        <span>Согласен с <a href="#" style="color:inherit;text-decoration:underline">политикой обработки персональных данных</a></span>
+      </label>
+      <div class="form__message form__message--ok" style="margin-top:16px">Спасибо, заявка отправлена. Перезвоним в течение часа.</div>
+      <div class="form__message form__message--err" style="margin-top:16px">Не удалось отправить. Позвоните нам: 8 (812) 431 71 27</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <img class="footer__logo" src="assets/img/logo.png" alt="НЭТИЗ" width="254" height="56">
+    <p class="footer__about">Разработка, производство и поставка аккумуляторных батарей и элементов питания с 1992 года.</p>
+    <div class="footer__social">
+      <a href="#" aria-label="Telegram"></a>
+      <a href="#" aria-label="ВКонтакте"></a>
+      <a href="#" aria-label="YouTube"></a>
+    </div>
+  </div>
+  <div>
+    <div class="footer__title">Каталог</div>
+    <nav class="footer__links">
+      <a href="#">Батареи литиевые</a>
+      <a href="#">Гидрология и навигация</a>
+      <a href="#">Стартерные Na-ion</a>
+      <a href="#">Первичные элементы</a>
+      <a href="#">Ni-MH, NiCd · ИБП</a>
+      <a href="#">Сборки по ТЗ</a>
+    </nav>
+  </div>
+  <div>
+    <div class="footer__title">Компания</div>
+    <nav class="footer__links">
+      <a href="#">О компании</a>
+      <a href="#">Производство</a>
+      <a href="#">Отрасли</a>
+      <a href="#">Кейсы</a>
+      <a href="#">Сертификаты</a>
+      <a href="#">Новости</a>
+      <a href="#">Оплата и доставка</a>
+    </nav>
+  </div>
+  <div>
+    <div class="footer__title">Контакты</div>
+    <a class="footer__phone" href="tel:+78124317127">8 (812) 431 71 27</a>
+    <div class="footer__contacts">
+      <a href="mailto:info@netizbattery.ru">info@netizbattery.ru</a><br><br>
+      Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А, пом. 32Н<br>
+      Ежедневно 9:00–20:00
+    </div>
+  </div>
+</footer>

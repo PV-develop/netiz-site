@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кейсы — НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- @include partials/header.html -->
+
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="breadcrumbs__sep"></span><span>Кейсы</span></nav>
+  <h1 class="h1">Кейсы</h1>
+  <p class="lead">Реальные задачи заказчиков: что было нужно, что сделали и что получилось в цифрах.</p>
+
+  <div class="tag-cloud">
+    <a class="tag is-active" href="#">Все <span class="tag__count">18</span></a>
+    <a class="tag" href="#">Гидрология <span class="tag__count">5</span></a>
+    <a class="tag" href="#">Резервное питание <span class="tag__count">4</span></a>
+    <a class="tag" href="#">Медтехника <span class="tag__count">3</span></a>
+    <a class="tag" href="#">Навигация <span class="tag__count">3</span></a>
+    <a class="tag" href="#">Приборы учёта <span class="tag__count">2</span></a>
+    <a class="tag" href="#">Телеметрия <span class="tag__count">1</span></a>
+  </div>
+  <!-- grid--3: bitrix:news.list, item ×N -->
+  <div class="grid grid--3" style="margin-top:clamp(32px,2.9vw,56px)">
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-ups.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">Резервное питание</span>
+        <h3 class="case-card__title"><a href="case.html" style="color:inherit">Замена свинца на LiFePO4 в ИБП</a></h3>
+        <p class="case-card__text">Задача: увеличить ресурс парка ИБП. Результат: 2000 циклов, вес меньше на 60 %.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">2000</div><div class="metric__label">циклов</div></div>
+          <div class="metric"><div class="metric__value">−60 %</div><div class="metric__label">вес</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="case.html">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-hydro.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">Гидрология</span>
+        <h3 class="case-card__title"><a href="case.html" style="color:inherit">Батарея для автономного гидропоста</a></h3>
+        <p class="case-card__text">Задача: 2 года работы без обслуживания при −40 °C. Результат: сборка Li-SOCl₂ на 5 лет ресурса.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">5 лет</div><div class="metric__label">ресурс</div></div>
+          <div class="metric"><div class="metric__value">−40 °C</div><div class="metric__label">рабочий минимум</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="case.html">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-med.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">Медтехника</span>
+        <h3 class="case-card__title"><a href="case.html" style="color:inherit">Сборка для мобильного анализатора</a></h3>
+        <p class="case-card__text">Задача: нестандартный отсек и разъём. Результат: серия из 120 сборок с BMS.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">120</div><div class="metric__label">сборок в серии</div></div>
+          <div class="metric"><div class="metric__value">BMS</div><div class="metric__label">своя прошивка</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="case.html">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-hydro.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">Навигация</span>
+        <h3 class="case-card__title"><a href="case.html" style="color:inherit">Батарея для аварийного радиобуя</a></h3>
+        <p class="case-card__text">Задача: 5 лет хранения и гарантированный пуск при −30 °C. Результат: Li-MnO₂ сборка с протоколом испытаний.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">5 лет</div><div class="metric__label">хранение</div></div>
+          <div class="metric"><div class="metric__value">−30 °C</div><div class="metric__label">пуск</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="case.html">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-ups.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">Приборы учёта</span>
+        <h3 class="case-card__title"><a href="case.html" style="color:inherit">Партия батарей для счётчиков газа</a></h3>
+        <p class="case-card__text">Задача: 12 000 элементов ER26500 с выводами под пайку в срок 3 недели. Результат: отгрузка в две партии, брак 0.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">12 000</div><div class="metric__label">элементов</div></div>
+          <div class="metric"><div class="metric__value">0</div><div class="metric__label">брак</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="case.html">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-med.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">Телеметрия</span>
+        <h3 class="case-card__title"><a href="case.html" style="color:inherit">Сборка для скважинного прибора</a></h3>
+        <p class="case-card__text">Задача: работа при +85 °C и вибрации. Результат: сборка Li-SOCl₂ высокотемпературной серии в стальном корпусе.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">+85 °C</div><div class="metric__label">рабочий максимум</div></div>
+          <div class="metric"><div class="metric__value">3 года</div><div class="metric__label">ресурс</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="case.html">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+  </div>
+    <nav class="pagination" aria-label="Страницы">
+      <a class="pagination__arrow is-disabled" href="#">←</a>
+      <a class="pagination__item is-active" href="#">1</a>
+      <a class="pagination__item" href="#">2</a>
+      <a class="pagination__item" href="#">3</a>
+      <a class="pagination__arrow" href="#">→</a>
+    </nav>
+</section>
+
+<!-- @include partials/block-catalog.html -->
+
+<!-- @include partials/lead-form.html -->
+
+<!-- @include partials/footer.html -->
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

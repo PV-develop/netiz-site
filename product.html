@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аккумуляторная батарея НЭТИЗ LFP 12,8 В 100 А·ч — купить в НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- ============================================================
+     partials/header.html → в Битриксе становится header.php шаблона.
+     Меню: bitrix:menu (top). Каталог-меню: bitrix:menu (catalog) или
+     bitrix:catalog.section.list. Поиск: bitrix:search.title.
+     Сравнение/избранное/корзина — bitrix:sale.basket.basket.line.
+     ============================================================ -->
+
+<!-- Мобильное меню (offcanvas). Рендерится один раз в header.php -->
+<div class="backdrop backdrop--blur" data-menu-close></div>
+<aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__head">
+    <img src="assets/img/logo.png" alt="НЭТИЗ">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню" data-menu-close>
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#406D95" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><line x1="3.5" y1="3.5" x2="14.5" y2="14.5"/><line x1="14.5" y1="3.5" x2="3.5" y2="14.5"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu__catalog">
+    <a class="btn btn--primary" href="catalog.html">
+      <svg class="btn__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="2" width="5.5" height="5.5"/><rect x="10.5" y="2" width="5.5" height="5.5"/><rect x="2" y="10.5" width="5.5" height="5.5"/><rect x="10.5" y="10.5" width="5.5" height="5.5"/></svg>
+      Каталог
+    </a>
+  </div>
+  <form class="mobile-menu__search" action="search.html" method="get">
+    <label class="field field--sm">
+      <input class="field__input" type="search" name="q" placeholder=" " autocomplete="off">
+      <span class="field__label">Найти по каталогу</span>
+    </label>
+  </form>
+  <!-- bitrix:menu top — один <a> на пункт -->
+  <nav class="mobile-menu__nav" aria-label="Основное меню">
+    <a href="#">Отрасли <span>→</span></a>
+    <a href="#">Сборки по ТЗ <span>→</span></a>
+    <a href="#">Кейсы <span>→</span></a>
+    <a href="#">Сертификаты <span>→</span></a>
+    <a href="#">О компании <span>→</span></a>
+    <a href="#">Новости <span>→</span></a>
+    <a href="#">Контакты <span>→</span></a>
+  </nav>
+  <div class="mobile-menu__contacts">
+    <a class="mobile-menu__phone" href="tel:+78124317127">8 (812) 431 71 27</a>
+    <a href="mailto:info@netizbattery.ru">info@netizbattery.ru</a>
+    <div class="text-2">Санкт-Петербург<br>Ежедневно 9:00–20:00</div>
+  </div>
+</aside>
+
+<!-- Верхняя полоска: навигация + контакты. Скрывается ≤1320px -->
+<div class="topbar">
+  <!-- bitrix:menu top -->
+  <nav class="topbar__nav" aria-label="Разделы сайта">
+    <a href="#">Отрасли</a>
+    <a href="#">Сборки по ТЗ</a>
+    <a href="#">Кейсы</a>
+    <a href="#">Сертификаты</a>
+    <a href="#">О компании</a>
+    <a href="#">Новости</a>
+    <a href="#">Контакты</a>
+  </nav>
+  <div class="topbar__contacts">
+    <span>Санкт-Петербург</span>
+    <a href="mailto:info@netizbattery.ru">info@netizbattery.ru</a>
+  </div>
+</div>
+
+<!-- Основная шапка -->
+<header class="header">
+  <a href="index.html"><img class="header__logo" src="assets/img/logo.png" alt="НЭТИЗ" width="254" height="56"></a>
+
+  <div class="header__catalog">
+    <button class="btn btn--primary" type="button" data-catalog-toggle aria-expanded="false" aria-controls="catalog-menu">
+      <svg class="btn__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="2" width="5.5" height="5.5"/><rect x="10.5" y="2" width="5.5" height="5.5"/><rect x="2" y="10.5" width="5.5" height="5.5"/><rect x="10.5" y="10.5" width="5.5" height="5.5"/></svg>
+      Каталог
+    </button>
+    <div class="backdrop" data-catalog-close></div>
+    <!-- bitrix:catalog.section.list — один .catalog-menu__item на раздел -->
+    <div class="catalog-menu" id="catalog-menu">
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Аккумуляторные батареи литиевые</span><span class="catalog-menu__count">10 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Батареи для гидрологии и навигации</span><span class="catalog-menu__count">45 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Стартерные батареи Na-ion</span><span class="catalog-menu__count">9 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Первичные элементы щелочные</span><span class="catalog-menu__count">16 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Первичные элементы литиевые</span><span class="catalog-menu__count">30 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Литиевые аккумуляторные ячейки</span><span class="catalog-menu__count">18 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Аккумуляторы Ni-MH, NiCd</span><span class="catalog-menu__count">24 позиции</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Источники бесперебойного питания</span><span class="catalog-menu__count">12 позиций</span></a>
+      <a class="catalog-menu__item" href="#"><span class="catalog-menu__name">Аккумуляторные сборки Li-ion, LFP</span><span class="catalog-menu__count">по ТЗ</span></a>
+      <div class="catalog-menu__foot">
+        <div class="catalog-menu__total">9 разделов · 700+ позиций в наличии</div>
+        <a class="link-arrow" href="catalog.html">Весь каталог <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- bitrix:search.title -->
+  <form class="header__search" action="search.html" method="get" role="search">
+    <label class="field field--sm">
+      <input class="field__input" type="search" name="q" placeholder=" " autocomplete="off">
+      <span class="field__label">Найти по каталогу</span>
+    </label>
+  </form>
+
+  <div class="header__right">
+    <a class="header__phone" href="tel:+78124317127">8 (812) 431 71 27</a>
+    <div class="header__actions">
+      <a class="icon-btn" href="compare.html">
+        <span class="icon-btn__circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#14161A" stroke-width="1.6" aria-hidden="true"><line x1="4" y1="16" x2="4" y2="8"/><line x1="10" y1="16" x2="10" y2="4"/><line x1="16" y1="16" x2="16" y2="11"/></svg></span>
+        <span class="icon-btn__label">Сравнение</span>
+      </a>
+      <a class="icon-btn" href="favorites.html">
+        <span class="icon-btn__circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#14161A" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="10,3 12.2,7.7 17.4,8.4 13.6,12 14.5,17.1 10,14.6 5.5,17.1 6.4,12 2.6,8.4 7.8,7.7"/></svg></span>
+        <span class="icon-btn__label">Избранное</span>
+      </a>
+      <!-- bitrix:sale.basket.basket.line — счётчик в .icon-btn__badge -->
+      <a class="icon-btn" href="cart.html">
+        <span class="icon-btn__circle">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#14161A" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polyline points="2,3 4.6,3 6.6,12 15.4,12 17.4,5.6 5.4,5.6"/><circle cx="7.4" cy="16" r="1.4"/><circle cx="14.6" cy="16" r="1.4"/></svg>
+          <span class="icon-btn__badge">2</span>
+        </span>
+        <span class="icon-btn__label">Корзина</span>
+      </a>
+      <button class="icon-btn header__burger" type="button" aria-label="Открыть меню" data-menu-open>
+        <span class="icon-btn__circle"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#406D95" stroke-width="1.6" aria-hidden="true"><line x1="3" y1="6" x2="17" y2="6"/><line x1="3" y1="10.5" x2="17" y2="10.5"/><line x1="3" y1="15" x2="17" y2="15"/></svg></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<!-- ===== Первый экран. bitrix:breadcrumb + bitrix:catalog.element ===== -->
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="#">Главная</a><span class="breadcrumbs__sep"></span><a href="#">Каталог</a><span class="breadcrumbs__sep"></span><a href="#">Аккумуляторные батареи литиевые</a><span class="breadcrumbs__sep"></span><span>Аккумуляторная батарея НЭТИЗ LFP 12,8 В 100 А·ч</span></nav>
+
+  <div class="pdp">
+    <!-- галерея -->
+    <div class="gallery">
+      <div class="gallery__main">
+        <img src="assets/img/placeholder-800x600.svg" alt="Аккумуляторная батарея НЭТИЗ LFP 12,8 В 100 А·ч" width="800" height="600">
+        <div class="gallery__badges">
+          <span class="chip">LiFePO4</span>
+          <!-- под заказ: <span class="chip">Под заказ, от 14 дней</span> -->
+        </div>
+        <div class="gallery__actions">
+          <button class="gallery__action" type="button" aria-label="В сравнение">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><line x1="4" y1="16" x2="4" y2="8"></line><line x1="10" y1="16" x2="10" y2="4"></line><line x1="16" y1="16" x2="16" y2="11"></line></svg>
+          </button>
+          <button class="gallery__action" type="button" aria-label="В избранное">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="10,3 12.2,7.7 17.4,8.4 13.6,12 14.5,17.1 10,14.6 5.5,17.1 6.4,12 2.6,8.4 7.8,7.7"></polygon></svg>
+          </button>
+        </div>
+        <button class="gallery__zoom" type="button" aria-label="Увеличить">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="7.6" cy="7.6" r="5.1"></circle><line x1="11.4" y1="11.4" x2="15.5" y2="15.5"></line><line x1="7.6" y1="5.4" x2="7.6" y2="9.8"></line><line x1="5.4" y1="7.6" x2="9.8" y2="7.6"></line></svg>
+        </button>
+      </div>
+      <div class="gallery__thumbs">
+        <!-- gallery__thumb: item ×N (MORE_PHOTO). Активная — .is-active -->
+        <button class="gallery__thumb is-active" type="button" aria-label="общий вид"><img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600"></button>
+        <button class="gallery__thumb" type="button" aria-label="клеммы M8"><img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600"></button>
+        <button class="gallery__thumb" type="button" aria-label="разъём и BMS"><img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600"></button>
+        <button class="gallery__thumb" type="button" aria-label="габаритный чертёж"><img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600"></button>
+      </div>
+    </div>
+
+    <!-- сводка товара -->
+    <div class="pdp__aside">
+      <div class="pdp__meta"><span>Арт. NB-LFP-12100</span><span>Бренд: НЭТИЗ</span></div>
+      <h1 class="h1">Аккумуляторная батарея НЭТИЗ LFP 12,8 В 100 А·ч</h1>
+      <div class="rating">
+        <span class="rating__stars" aria-label="Рейтинг 4,8 из 5">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+          <svg class="is-off" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+        </span>
+        <span>4,8</span>
+        <a class="rating__link" href="#reviews">4 отзыва</a>
+      </div>
+
+      <div class="keyspecs">
+        <div class="keyspec"><span class="keyspec__name">Химия</span><span class="keyspec__val">LiFePO4</span></div>
+        <div class="keyspec"><span class="keyspec__name">Напряжение</span><span class="keyspec__val">12,8 В</span></div>
+        <div class="keyspec"><span class="keyspec__name">Ёмкость</span><span class="keyspec__val">100 А·ч</span></div>
+        <div class="keyspec"><span class="keyspec__name">Ресурс</span><span class="keyspec__val">2000 циклов</span></div>
+        <div class="keyspec"><span class="keyspec__name">Рабочая температура</span><span class="keyspec__val">−20…+60 °C</span></div>
+      </div>
+
+      <!-- сводка покупки -->
+      <div class="buybox">
+        <div class="buybox__price">
+            <span class="buybox__value">24 900 ₽</span>
+            <span class="buybox__unit">за шт. · от 10 шт. дешевле</span>
+          </div>
+        <!-- без цены: <div class="buybox__request">Цена по запросу</div> -->
+        <div class="buybox__note">НДС включён · есть на складе в Петербурге</div>
+        <div class="buybox__row">
+          <div class="stepper">
+              <button class="stepper__btn" type="button" aria-label="Меньше">–</button>
+              <input class="stepper__val" type="number" name="quantity" value="1" min="1" aria-label="Количество">
+              <button class="stepper__btn" type="button" aria-label="Больше">+</button>
+              <span class="stepper__unit">шт.</span>
+            </div>
+          <button class="btn btn--primary" type="button">
+            <svg class="btn__icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polyline points="2,3 4.6,3 6.6,12 15.4,12 17.4,5.6 5.4,5.6"></polyline><circle cx="7.4" cy="16" r="1.4"></circle><circle cx="14.6" cy="16" r="1.4"></circle></svg>
+            В корзину
+          </button>
+        </div>
+      </div>
+      <a class="btn btn--secondary pdp__consult" href="#lead">
+        <svg class="btn__icon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.2 4.6a1.6 1.6 0 0 1 1.6-1.6h1.9c.7 0 1.3.5 1.5 1.2l.5 2a1.6 1.6 0 0 1-.6 1.7l-1 .8a9.4 9.4 0 0 0 3.8 3.8l.8-1a1.6 1.6 0 0 1 1.7-.6l2 .5c.7.2 1.2.8 1.2 1.5v1.9a1.6 1.6 0 0 1-1.6 1.6A13.8 13.8 0 0 1 3.2 4.6Z"></path></svg>
+        Консультация инженера
+      </a>
+
+      <div class="usp">
+        <div class="usp__item">
+          <span class="usp__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h9v8H2z"></path><path d="M11 9h4l3 3v2h-7z"></path><circle cx="6" cy="16" r="1.6"></circle><circle cx="14.6" cy="16" r="1.6"></circle></svg></span>
+          <span>Отгрузка со склада — <b>в день оплаты</b></span>
+        </div>
+        <div class="usp__item">
+          <span class="usp__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.4 16.6 5v5c0 3.8-2.8 6.5-6.6 7.6C6.2 16.5 3.4 13.8 3.4 10V5L10 2.4Z"></path><path d="M7.4 10.2l2 2 3.4-3.6"></path></svg></span>
+          <span><b>Гарантия 3 года</b>, протокол испытаний по запросу</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Табы ===== -->
+  <div class="tabs">
+    <div class="tabs__list" role="tablist">
+      <!-- tabs__tab: «Отзывы» — якорь на секцию ниже -->
+      <button class="tabs__tab" type="button" role="tab" data-tab="desc">Описание<span></span></button>
+      <button class="tabs__tab is-active" type="button" role="tab" data-tab="specs">Характеристики<span>10</span></button>
+      <a class="tabs__tab" href="#reviews" role="tab">Отзывы<span>4</span></a>
+      <button class="tabs__tab" type="button" role="tab" data-tab="buy">Как купить<span></span></button>
+      <button class="tabs__tab" type="button" role="tab" data-tab="ship">Доставка<span></span></button>
+    </div>
+
+              <div class="tabs__panel is-active" role="tabpanel" data-panel="specs">
+      <div class="specs">
+                    <!-- specs__group: группы свойств (PROPERTY hint/section), строки — свойства товара -->
+          <div class="specs__group">
+            <div class="specs__group-title">Электрические</div>
+            <div class="specs__row"><span class="specs__name">Химия</span><span class="specs__val">LiFePO4</span></div>
+            <div class="specs__row"><span class="specs__name">Номинальное напряжение</span><span class="specs__val">12,8 В</span></div>
+            <div class="specs__row"><span class="specs__name">Ёмкость</span><span class="specs__val">100 А·ч</span></div>
+            <div class="specs__row"><span class="specs__name">Ресурс</span><span class="specs__val">2000 циклов</span></div>
+            <div class="specs__row"><span class="specs__name">BMS</span><span class="specs__val">встроенная</span></div>
+          </div>
+          <div class="specs__group">
+            <div class="specs__group-title">Механические</div>
+            <div class="specs__row"><span class="specs__name">Габариты (Д×Ш×В)</span><span class="specs__val">330×172×215 мм</span></div>
+            <div class="specs__row"><span class="specs__name">Вес</span><span class="specs__val">11,5 кг</span></div>
+            <div class="specs__row"><span class="specs__name">Разъём</span><span class="specs__val">M8</span></div>
+          </div>
+          <div class="specs__group">
+            <div class="specs__group-title">Условия эксплуатации</div>
+            <div class="specs__row"><span class="specs__name">Рабочая температура</span><span class="specs__val">−20…+60 °C</span></div>
+            <div class="specs__row"><span class="specs__name">Гарантия</span><span class="specs__val">3 года</span></div>
+          </div>
+          <div class="docs">
+            <a class="btn" href="#">
+              <svg class="btn__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2h6l4 4v10H4z"></path><path d="M10 2v4h4"></path><path d="M9 9v4.5M7 11.5 9 13.5l2-2"></path></svg>
+              Скачать паспорт изделия (PDF)
+            </a>
+            <a class="btn" href="#">
+              <svg class="btn__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2h6l4 4v10H4z"></path><path d="M10 2v4h4"></path><path d="M9 9v4.5M7 11.5 9 13.5l2-2"></path></svg>
+              Протокол испытаний (PDF)
+            </a>
+            <div class="docs__note">Паспорт безопасности MSDS и сертификаты — по запросу у менеджера</div>
+          </div>
+        </div>
+    </div>
+
+          <div class="tabs__panel" role="tabpanel" data-panel="desc">
+      <div class="prose">
+          <h3 class="h3">Назначение</h3>
+          <p>Батарея LiFePO4 на 12,8 В и 100 А·ч заменяет свинцовый аккумулятор того же типоразмера в системах резервного питания, на транспорте и в автономных установках. Встроенная BMS отключает батарею при переразряде, перезаряде, перегреве и коротком замыкании.</p>
+          <p>Ресурс 2000 циклов при разряде 80 % — примерно в пять раз больше, чем у свинцово-кислотной АКБ, вес меньше на 60 %. Батарея не требует обслуживания и доливки, допускает хранение в разряженном состоянии.</p>
+          <h3 class="h3">Особенности</h3>
+          <ul>
+            <li>Корпус под стандартный отсек 330×172×215 мм, клеммы M8</li>
+            <li>Работа при −20…+60 °C, версия с подогревом — по запросу</li>
+            <li>Последовательное и параллельное соединение до 4 батарей</li>
+            <li>Проверка ёмкости и НРЦ каждой партии перед отгрузкой</li>
+          </ul>
+        </div>
+    </div>
+
+          <div class="tabs__panel" role="tabpanel" data-panel="buy">
+      <div class="prose">
+          <h3 class="h3">Как купить</h3>
+          <p>Работаем с юридическими лицами и ИП по счёту и договору, с физическими лицами — по предоплате. Оформить заказ можно через корзину, по телефону или письмом на info@netizbattery.ru.</p>
+          <ul>
+            <li>Пришлите спецификацию или добавьте позиции в корзину — выставим счёт в течение рабочего дня</li>
+            <li>На партии от 10 шт. и при регулярных поставках действует отдельная цена</li>
+            <li>Для тендеров и закупок готовим коммерческое предложение и комплект документов</li>
+          </ul>
+        </div>
+    </div>
+
+          <div class="tabs__panel" role="tabpanel" data-panel="ship">
+      <div class="prose">
+          <h3 class="h3">Доставка и отгрузка</h3>
+          <p>Позиции со склада в Петербурге отгружаем в день оплаты, изделия под заказ — от 14 рабочих дней. Самовывоз со склада на ул. Савушкина, 115 ежедневно с 9:00 до 20:00.</p>
+          <ul>
+            <li>Транспортные компании по России, перевозка литиевых изделий по UN3480 с MSDS</li>
+            <li>Доставка по Петербургу и Ленинградской области нашим транспортом</li>
+            <li>Упаковка под требования перевозчика, маркировка партии по запросу</li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Отзывы: сводка рейтинга, отзывы, форма ===== -->
+<section class="section container" id="reviews">
+  <div class="section__head">
+    <h2 class="h2">Отзывы</h2>
+    <div class="section__meta">4 отзыва · средняя оценка 4,8</div>
+  </div>
+  <div class="rsum">
+    <div class="rsum__score">
+      <div class="rsum__value">4,8</div>
+      <span class="rating__stars" aria-hidden="true">
+        <svg viewBox="0 0 20 20" fill="currentColor"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+        <svg viewBox="0 0 20 20" fill="currentColor"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+        <svg class="is-off" viewBox="0 0 20 20" fill="currentColor"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"></polygon></svg>
+      </span>
+      <div class="rsum__count">4 отзыва о товаре</div>
+    </div>
+    <div class="rbars">
+              <div class="rbar"><span class="rbar__star">5 ★</span><span class="rbar__track"><span class="rbar__fill" style="width:75%"></span></span><span class="rbar__n">3</span></div>
+        <div class="rbar"><span class="rbar__star">4 ★</span><span class="rbar__track"><span class="rbar__fill" style="width:25%"></span></span><span class="rbar__n">1</span></div>
+        <div class="rbar"><span class="rbar__star">3 ★</span><span class="rbar__track"><span class="rbar__fill" style="width:0%"></span></span><span class="rbar__n">0</span></div>
+        <div class="rbar"><span class="rbar__star">2 ★</span><span class="rbar__track"><span class="rbar__fill" style="width:0%"></span></span><span class="rbar__n">0</span></div>
+        <div class="rbar"><span class="rbar__star">1 ★</span><span class="rbar__track"><span class="rbar__fill" style="width:0%"></span></span><span class="rbar__n">0</span></div>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <!-- review: item ×N (ИБ «Отзывы», привязка к товару) -->
+    <blockquote class="card review">
+      <span class="rating__stars review__rating" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+      </span>
+      <p class="review__text">Блок у нас старый, ему двадцать пять лет. У свинцового аккумулятора НРЦ было 11,4 В, у нового — 13,5 В. Ошибку по АКБ сбросил, полёт нормальный.</p>
+      <footer class="review__author">
+        <div class="review__avatar"><img src="assets/img/placeholder-104x104.svg" alt="" width="52" height="52" loading="lazy"></div>
+        <div><div class="review__name">Главный энергетик</div><div class="review__org">производственное предприятие, СПб</div></div>
+      </footer>
+    </blockquote>
+    <blockquote class="card review">
+      <span class="rating__stars review__rating" aria-label="Оценка 5 из 5">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg>
+      </span>
+      <p class="review__text">Сборку сделали по нашему ТЗ за две недели, включая испытания. Документы приложили полностью — вопросов у комиссии не возникло.</p>
+      <footer class="review__author">
+        <div class="review__avatar"><img src="assets/img/placeholder-104x104.svg" alt="" width="52" height="52" loading="lazy"></div>
+        <div><div class="review__name">Начальник отдела снабжения</div><div class="review__org">НИИ, Москва</div></div>
+      </footer>
+    </blockquote>
+  </div>
+
+  <form class="form review-form" action="#" method="post">
+    <div class="review-form__title">Оставить отзыв</div>
+    <div class="review-form__sub">Публикуем после проверки, обычно в течение рабочего дня</div>
+    <div class="stars-input" role="radiogroup" aria-label="Оценка" data-stars>
+      <input type="hidden" name="rating" value="5">
+            <button class="is-on" type="button" aria-label="1 из 5" data-star="1"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg></button>
+      <button class="is-on" type="button" aria-label="2 из 5" data-star="2"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg></button>
+      <button class="is-on" type="button" aria-label="3 из 5" data-star="3"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg></button>
+      <button class="is-on" type="button" aria-label="4 из 5" data-star="4"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg></button>
+      <button class="is-on" type="button" aria-label="5 из 5" data-star="5"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><polygon points="10,2 12.4,7.4 18.2,8.1 13.9,12 15,17.8 10,15 5,17.8 6.1,12 1.8,8.1 7.6,7.4"/></svg></button>
+      <span class="stars-input__hint">Отлично</span>
+    </div>
+    <div class="form__stack">
+      <div class="review-form__cols">
+        <label class="field"><input class="field__input" type="text" name="name" placeholder=" "><span class="field__label">Имя</span></label>
+        <label class="field"><input class="field__input" type="text" name="org" placeholder=" "><span class="field__label">Компания</span></label>
+      </div>
+      <label class="field"><textarea class="field__input" name="text" placeholder=" "></textarea><span class="field__label">Как батарея показала себя в работе</span></label>
+      <label class="check"><input class="check__input" type="checkbox" name="agree"><span class="check__box"></span><span>Согласен с политикой обработки персональных данных</span></label>
+      <button class="btn btn--primary btn--lg" type="submit" style="margin-top:6px;align-self:flex-start">Отправить отзыв</button>
+    </div>
+  </form>
+</section>
+
+<!-- ===== Похожие товары. product-card из листинга ===== -->
+<section class="section container">
+  <div class="section__head">
+    <h2 class="h2">Похожие товары</h2>
+    <a class="link-arrow link-arrow--lg" href="#">Весь раздел →</a>
+  </div>
+  <div class="grid grid--products">
+    <!-- product-card ×4: bitrix:catalog.section (похожие / того же раздела) -->
+    <article class="card product-card">
+      <div class="product-card__media">
+        <img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600" loading="lazy">
+        <div class="product-card__badges"></div>
+        <div class="product-card__actions">
+          <button class="product-card__action" type="button" aria-label="Сравнить"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><line x1="4" y1="16" x2="4" y2="8"/><line x1="10" y1="16" x2="10" y2="4"/><line x1="16" y1="16" x2="16" y2="11"/></svg></button>
+          <button class="product-card__action" type="button" aria-label="В избранное"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="10,3 12.2,7.7 17.4,8.4 13.6,12 14.5,17.1 10,14.6 5.5,17.1 6.4,12 2.6,8.4 7.8,7.7"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card__body">
+        <div class="product-card__sku">Арт. NB-LFP-1250</div>
+        <h3 class="product-card__title"><a href="product.html">Аккумуляторная батарея НЭТИЗ LFP 12,8 В 50 А·ч</a></h3>
+        <div class="product-card__params">
+          <div class="product-card__param"><span>Напряжение</span><span>12,8 В</span></div>
+          <div class="product-card__param"><span>Ёмкость</span><span>50 А·ч</span></div>
+          <div class="product-card__param"><span>Типоразмер</span><span>229×138×210 мм</span></div>
+        </div>
+        <div class="product-card__stock is-in">В наличии · 15 шт.</div>
+        <div class="product-card__foot">
+          <div class="product-card__price">13 400<span class="product-card__price-unit">₽ / шт.</span></div>
+            <button class="btn btn--primary" type="button">В корзину</button>
+        </div>
+      </div>
+    </article>
+    <article class="card product-card">
+      <div class="product-card__media">
+        <img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600" loading="lazy">
+        <div class="product-card__badges"><span class="chip">Новинка</span></div>
+        <div class="product-card__actions">
+          <button class="product-card__action" type="button" aria-label="Сравнить"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><line x1="4" y1="16" x2="4" y2="8"/><line x1="10" y1="16" x2="10" y2="4"/><line x1="16" y1="16" x2="16" y2="11"/></svg></button>
+          <button class="product-card__action" type="button" aria-label="В избранное"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="10,3 12.2,7.7 17.4,8.4 13.6,12 14.5,17.1 10,14.6 5.5,17.1 6.4,12 2.6,8.4 7.8,7.7"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card__body">
+        <div class="product-card__sku">Арт. NB-LFP-12200</div>
+        <h3 class="product-card__title"><a href="product.html">Аккумуляторная батарея НЭТИЗ LFP 12,8 В 200 А·ч</a></h3>
+        <div class="product-card__params">
+          <div class="product-card__param"><span>Напряжение</span><span>12,8 В</span></div>
+          <div class="product-card__param"><span>Ёмкость</span><span>200 А·ч</span></div>
+          <div class="product-card__param"><span>Типоразмер</span><span>522×240×218 мм</span></div>
+        </div>
+        <div class="product-card__stock is-in">В наличии · 4 шт.</div>
+        <div class="product-card__foot">
+          <div class="product-card__price">46 800<span class="product-card__price-unit">₽ / шт.</span></div>
+            <button class="btn btn--primary" type="button">В корзину</button>
+        </div>
+      </div>
+    </article>
+    <article class="card product-card">
+      <div class="product-card__media">
+        <img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600" loading="lazy">
+        <div class="product-card__badges"></div>
+        <div class="product-card__actions">
+          <button class="product-card__action" type="button" aria-label="Сравнить"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><line x1="4" y1="16" x2="4" y2="8"/><line x1="10" y1="16" x2="10" y2="4"/><line x1="16" y1="16" x2="16" y2="11"/></svg></button>
+          <button class="product-card__action" type="button" aria-label="В избранное"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="10,3 12.2,7.7 17.4,8.4 13.6,12 14.5,17.1 10,14.6 5.5,17.1 6.4,12 2.6,8.4 7.8,7.7"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card__body">
+        <div class="product-card__sku">Арт. NB-LFP-2460H</div>
+        <h3 class="product-card__title"><a href="product.html">Аккумуляторная батарея НЭТИЗ LFP 25,6 В 60 А·ч с подогревом</a></h3>
+        <div class="product-card__params">
+          <div class="product-card__param"><span>Напряжение</span><span>25,6 В</span></div>
+          <div class="product-card__param"><span>Ёмкость</span><span>60 А·ч</span></div>
+          <div class="product-card__param"><span>Типоразмер</span><span>520×240×220 мм</span></div>
+        </div>
+        <div class="product-card__stock">Под заказ · 21 день</div>
+        <div class="product-card__foot">
+          <div class="product-card__price product-card__price--request">Цена по запросу</div>
+            <a class="btn btn--secondary" href="#lead">Запросить</a>
+        </div>
+      </div>
+    </article>
+    <article class="card product-card">
+      <div class="product-card__media">
+        <img src="assets/img/placeholder-600x600.svg" alt="" width="600" height="600" loading="lazy">
+        <div class="product-card__badges"><span class="chip">Хит</span></div>
+        <div class="product-card__actions">
+          <button class="product-card__action" type="button" aria-label="Сравнить"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><line x1="4" y1="16" x2="4" y2="8"/><line x1="10" y1="16" x2="10" y2="4"/><line x1="16" y1="16" x2="16" y2="11"/></svg></button>
+          <button class="product-card__action" type="button" aria-label="В избранное"><svg width="16" height="16" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><polygon points="10,3 12.2,7.7 17.4,8.4 13.6,12 14.5,17.1 10,14.6 5.5,17.1 6.4,12 2.6,8.4 7.8,7.7"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card__body">
+        <div class="product-card__sku">Арт. UE-12100</div>
+        <h3 class="product-card__title"><a href="product.html">Аккумулятор LiFePO4 Unique Energy UE-12100 12,8 В 100 А·ч</a></h3>
+        <div class="product-card__params">
+          <div class="product-card__param"><span>Напряжение</span><span>12,8 В</span></div>
+          <div class="product-card__param"><span>Ёмкость</span><span>100 А·ч</span></div>
+          <div class="product-card__param"><span>Типоразмер</span><span>330×172×220 мм</span></div>
+        </div>
+        <div class="product-card__stock is-in">В наличии · 8 шт.</div>
+        <div class="product-card__foot">
+          <div class="product-card__price">38 900<span class="product-card__price-unit">₽ / шт.</span></div>
+            <button class="btn btn--primary" type="button">В корзину</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Блок «Подберём батарею» — общий для главной, разделов каталога, карточки товара -->
+<!-- ===== Лид-форма «Подберём батарею». bitrix:main.feedback / свой компонент. Файл — input[type=file] ===== -->
+<section class="section container" id="lead">
+  <div class="plate plate--dark plate--photo lead-block" style="background-image:url('assets/img/lead-bg.jpg')">
+    <div class="lead-block__text">
+      <h2 class="h2 h2--plate">Подберём батарею под ваше оборудование</h2>
+      <p class="lead" style="margin-top:clamp(20px,1.7vw,32px)">Пришлите модель прибора, габариты отсека или старую батарею — инженер предложит замену и посчитает стоимость.</p>
+      <div class="metrics" style="margin-top:clamp(36px,3.3vw,64px)">
+        <div class="metric metric--lg"><div class="metric__value metric__value--accent">1 день</div><div class="metric__label">на расчёт</div></div>
+        <div class="metric metric--lg"><div class="metric__value">от 1 шт.</div><div class="metric__label">минимальная партия</div></div>
+      </div>
+    </div>
+    <form class="form glass lead-block__form" action="#" method="post" enctype="multipart/form-data" novalidate>
+      <div class="glass__title">Запрос на подбор</div>
+      <div class="form__stack">
+        <label class="field field--glass">
+          <input class="field__input" type="text" name="name" placeholder=" " required>
+          <span class="field__label">Имя</span>
+        </label>
+        <label class="field field--glass">
+          <input class="field__input" type="text" name="contact" placeholder=" " required>
+          <span class="field__label">Телефон или e-mail</span>
+        </label>
+        <label class="field field--glass">
+          <input class="field__input" type="text" name="model" placeholder=" ">
+          <span class="field__label">Модель оборудования или параметры батареи</span>
+        </label>
+        <div class="form__row" style="margin-top:10px">
+          <label class="btn btn--outline-dark">
+            <svg class="btn__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.5 12 20a5 5 0 0 1-7-7l8-8a3.5 3.5 0 0 1 5 5l-8 8a2 2 0 0 1-3-3l7-7"/></svg>
+            Прикрепить чертёж
+            <input class="visually-hidden" type="file" name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg">
+          </label>
+          <div class="form__note">ТЗ, чертёж или фото (pdf, jpg, dwg)</div>
+        </div>
+        <label class="check check--glass" style="margin-top:14px">
+          <input class="check__input" type="checkbox" name="agree" required>
+          <span class="check__box"></span>
+          <span>Согласен с политикой обработки персональных данных</span>
+        </label>
+        <button class="btn btn--secondary btn--block" type="submit" style="margin-top:18px">Отправить запрос</button>
+        <div class="form__message form__message--ok">Запрос отправлен. Инженер свяжется с вами в течение дня.</div>
+        <div class="form__message form__message--err">Не удалось отправить. Проверьте поля или позвоните: 8 (812) 431 71 27</div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!-- Разделы каталога: bitrix:catalog.section.list, 4 карточки -->
+<!-- ===== Разделы каталога. cat-card с главной ===== -->
+<section class="section container">
+  <div class="section__head">
+    <h2 class="h2">Разделы каталога</h2>
+    <a class="link-arrow link-arrow--lg" href="#">Весь каталог →</a>
+  </div>
+  <div class="grid grid--cards">
+    <a class="card cat-card" href="#">
+      <span class="cat-card__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="12" y="18" width="40" height="28" rx="4"></rect><line x1="22" y1="18" x2="22" y2="14"></line><line x1="42" y1="18" x2="42" y2="14"></line><line x1="20" y1="32" x2="44" y2="32"></line></svg></span>
+      <span class="cat-card__body"><span class="cat-card__title">Аккумуляторные батареи литиевые</span><span class="cat-card__count">10 позиций</span><span class="link-arrow cat-card__more">Смотреть <span class="link-arrow__arrow">→</span></span></span>
+    </a>
+    <a class="card cat-card" href="#">
+      <span class="cat-card__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="32" cy="16" r="8"></circle><line x1="32" y1="24" x2="32" y2="38"></line><path d="M8 44c6-5 10-5 16 0s10 5 16 0 10-5 16 0"></path><path d="M8 54c6-5 10-5 16 0s10 5 16 0 10-5 16 0"></path></svg></span>
+      <span class="cat-card__body"><span class="cat-card__title">Батареи для гидрологии и навигации</span><span class="cat-card__count">45 позиций</span><span class="link-arrow cat-card__more">Смотреть <span class="link-arrow__arrow">→</span></span></span>
+    </a>
+    <a class="card cat-card" href="#">
+      <span class="cat-card__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="32" cy="32" r="22"></circle><circle cx="32" cy="32" r="9"></circle><line x1="32" y1="10" x2="32" y2="23"></line><line x1="32" y1="41" x2="32" y2="54"></line></svg></span>
+      <span class="cat-card__body"><span class="cat-card__title">Литиевые аккумуляторные ячейки</span><span class="cat-card__count">18 позиций</span><span class="link-arrow cat-card__more">Смотреть <span class="link-arrow__arrow">→</span></span></span>
+    </a>
+    <a class="card cat-card cat-card--dark" href="#brief">
+      <span class="cat-card__icon"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="14" width="14" height="20"></rect><rect x="25" y="14" width="14" height="20"></rect><rect x="42" y="14" width="14" height="20"></rect><line x1="8" y1="44" x2="56" y2="44"></line></svg></span>
+      <span class="cat-card__body"><span class="cat-card__title">Аккумуляторные сборки Li-ion, LFP</span><span class="cat-card__count">изготовление по ТЗ</span><span class="link-arrow cat-card__more">Обсудить проект <span class="link-arrow__arrow">→</span></span></span>
+    </a>
+  </div>
+</section>
+
+
+<!-- Кейсы: bitrix:news.list ИБ «Кейсы», 3 последних -->
+<!-- ===== Кейсы. case-card с главной ===== -->
+<section class="section container">
+  <div class="section__head">
+    <h2 class="h2">Кейсы</h2>
+    <a class="link-arrow link-arrow--lg" href="#">Все кейсы →</a>
+  </div>
+  <div class="grid grid--3">
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-ups.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">РЕЗЕРВНОЕ ПИТАНИЕ</span>
+        <h3 class="case-card__title">Замена свинца на LiFePO4 в ИБП</h3>
+        <p class="case-card__text">Задача: увеличить ресурс парка ИБП. Результат: 2000 циклов, вес меньше на 60 %.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">2000</div><div class="metric__label">циклов</div></div>
+          <div class="metric"><div class="metric__value">−60 %</div><div class="metric__label">вес</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="#">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-hydro.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">ГИДРОЛОГИЯ</span>
+        <h3 class="case-card__title">Батарея для автономного гидропоста</h3>
+        <p class="case-card__text">Задача: 2 года работы без обслуживания при −40 °C. Результат: сборка Li-SOCl₂ на 5 лет ресурса.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">5 лет</div><div class="metric__label">ресурс</div></div>
+          <div class="metric"><div class="metric__value">−40 °C</div><div class="metric__label">рабочий минимум</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="#">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+    <article class="card case-card">
+      <div class="case-card__media"><img src="assets/img/case-med.jpg" alt="" width="800" height="500" loading="lazy"></div>
+      <div class="case-card__body">
+        <span class="chip">МЕДТЕХНИКА</span>
+        <h3 class="case-card__title">Сборка для мобильного анализатора</h3>
+        <p class="case-card__text">Задача: нестандартный отсек и разъём. Результат: серия из 120 сборок с BMS.</p>
+        <div class="case-card__metrics">
+          <div class="metric"><div class="metric__value metric__value--accent">120</div><div class="metric__label">сборок в серии</div></div>
+          <div class="metric"><div class="metric__value">BMS</div><div class="metric__label">своя прошивка</div></div>
+        </div>
+        <a class="link-arrow case-card__more" href="#">Подробнее <span class="link-arrow__arrow">→</span></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- Статьи: bitrix:news.list ИБ «Новости», 3 последних -->
+<!-- ===== Статьи. news-card с главной ===== -->
+<section class="section container">
+  <div class="section__head">
+    <h2 class="h2">Статьи</h2>
+    <a class="link-arrow link-arrow--lg" href="#">Все статьи →</a>
+  </div>
+  <div class="grid grid--news">
+    <article class="news-card">
+      <a class="news-card__media" href="#"><img src="assets/img/news-tz.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <div class="news-card__date">20 июля 2026</div>
+      <h3 class="news-card__title">Как составить ТЗ на аккумуляторную сборку</h3>
+      <p class="news-card__text">Шесть параметров, без которых расчёт придётся переделывать.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="#"><img src="assets/img/news-chem.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <div class="news-card__date">20 июля 2026</div>
+      <h3 class="news-card__title">Как выбрать химию батареи для работы при −40 °C</h3>
+      <p class="news-card__text">Сравнение Li-SOCl₂, LiFePO4 и Ni-MH в полевых условиях.</p>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="#"><img src="assets/img/news-tests.jpg" alt="" width="800" height="500" loading="lazy"></a>
+      <div class="news-card__date">20 июля 2026</div>
+      <h3 class="news-card__title">Что проверяют испытания сборки перед отгрузкой</h3>
+      <p class="news-card__text">Ёмкость, НРЦ, циклирование и климатика: что попадает в протокол.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     partials/footer.html → footer.php шаблона.
+     Блок «Пришлем каталог» — общий для всех страниц, тоже живёт здесь.
+     Форма: bitrix:main.feedback или свой компонент; классы состояний
+     .form.is-success / .form.is-error, поля .field.is-error.
+     Колонки ссылок: bitrix:menu (bottom_catalog, bottom_company).
+     ============================================================ -->
+
+<section class="section container">
+  <div class="plate plate--dark subscribe">
+    <div class="subscribe__text">
+      <h2 class="h3">Пришлем каталог и ответим на любые вопросы</h2>
+      <p class="lead" style="margin-top:16px">Инженер перезвонит в течение часа</p>
+    </div>
+    <form class="form subscribe__form" action="#" method="post" novalidate>
+      <div class="subscribe__row">
+        <label class="field field--dark">
+          <input class="field__input" type="text" name="name" placeholder=" " required>
+          <span class="field__label">Имя</span>
+        </label>
+        <label class="field field--dark">
+          <input class="field__input" type="text" name="contact" placeholder=" " required>
+          <span class="field__label">Телефон или e-mail</span>
+        </label>
+        <button class="btn btn--secondary" type="submit">Оставить заявку</button>
+      </div>
+      <label class="check check--dark" style="margin-top:20px">
+        <input class="check__input" type="checkbox" name="agree" required>
+        <span class="check__box"></span>
+        <span>Согласен с <a href="#" style="color:inherit;text-decoration:underline">политикой обработки персональных данных</a></span>
+      </label>
+      <div class="form__message form__message--ok" style="margin-top:16px">Спасибо, заявка отправлена. Перезвоним в течение часа.</div>
+      <div class="form__message form__message--err" style="margin-top:16px">Не удалось отправить. Позвоните нам: 8 (812) 431 71 27</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <img class="footer__logo" src="assets/img/logo.png" alt="НЭТИЗ" width="254" height="56">
+    <p class="footer__about">Разработка, производство и поставка аккумуляторных батарей и элементов питания с 1992 года.</p>
+    <div class="footer__social">
+      <a href="#" aria-label="Telegram"></a>
+      <a href="#" aria-label="ВКонтакте"></a>
+      <a href="#" aria-label="YouTube"></a>
+    </div>
+  </div>
+  <div>
+    <div class="footer__title">Каталог</div>
+    <nav class="footer__links">
+      <a href="#">Батареи литиевые</a>
+      <a href="#">Гидрология и навигация</a>
+      <a href="#">Стартерные Na-ion</a>
+      <a href="#">Первичные элементы</a>
+      <a href="#">Ni-MH, NiCd · ИБП</a>
+      <a href="#">Сборки по ТЗ</a>
+    </nav>
+  </div>
+  <div>
+    <div class="footer__title">Компания</div>
+    <nav class="footer__links">
+      <a href="#">О компании</a>
+      <a href="#">Производство</a>
+      <a href="#">Отрасли</a>
+      <a href="#">Кейсы</a>
+      <a href="#">Сертификаты</a>
+      <a href="#">Новости</a>
+      <a href="#">Оплата и доставка</a>
+    </nav>
+  </div>
+  <div>
+    <div class="footer__title">Контакты</div>
+    <a class="footer__phone" href="tel:+78124317127">8 (812) 431 71 27</a>
+    <div class="footer__contacts">
+      <a href="mailto:info@netizbattery.ru">info@netizbattery.ru</a><br><br>
+      Санкт-Петербург, ул. Савушкина 115, к. 4, лит. А, пом. 32Н<br>
+      Ежедневно 9:00–20:00
+    </div>
+  </div>
+</footer>
+
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
