@@ -10,5 +10,5 @@ def include(m):
 for src in (root / 'src').glob('*.html'):
     html = src.read_text(encoding='utf-8')
     html = re.sub(r'<!--\s*@include\s+(\S+)\s*-->', include, html)
-    (root / src.name).write_text(html, encoding='utf-8')
+    (root / src.name).write_text(html, encoding='utf-8', newline='\n')
     print('built', src.name)
