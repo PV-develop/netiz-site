@@ -1,0 +1,53 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Сборка совпадает с исходниками
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: python3 build.py
+        run: python3 build.py
+
+      - name: Проверить, что собранные страницы актуальны
+        run: |
+          if ! git diff --quiet; then
+            echo "::error::Файлы *.html в корне не совпадают с src/ + partials/"
+            echo "Запустите локально python3 build.py и закоммитьте результат."
+            git diff --stat
+            exit 1
+          fi
+          echo "Сборка актуальна."
+
+  screenshots:
+    name: Скриншоты страниц
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Установить playwright
+        run: |
+          pip install --quiet playwright
+          playwright install --with-deps chromium
+
+      - name: Снять страницы на 1440 и 390 px
+        run: python3 tools/screenshots.py
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshots
+          path: tools/screenshots/
+          retention-days: 14
