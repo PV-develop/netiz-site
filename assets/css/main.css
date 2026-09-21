@@ -256,7 +256,8 @@ ul { padding: 0; list-style: none; }
   cursor: pointer; transition: background var(--t-fast);
 }
 .cat-card:hover { background: var(--c-surface-4); color: var(--c-ink); }
-.cat-card__icon { position: absolute; top: 24px; right: 24px; color: var(--c-icon); }
+/* иконка в потоке, а не absolute: при длинном заголовке карточка растёт, текст не наезжает */
+.cat-card__icon { align-self: flex-end; margin-bottom: 16px; color: var(--c-icon); line-height: 0; }
 .cat-card__icon svg { width: clamp(60px, 4.4vw, 84px); height: auto; }
 .cat-card__body { display: block; margin-top: auto; }
 .cat-card__title, .cat-card__count { display: block; }
