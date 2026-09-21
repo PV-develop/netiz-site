@@ -13,7 +13,7 @@ service.html          детальная запись (услуга) — шаб�
 contacts.html         контакты: способы связи, карта, форма, реквизиты, отдел продаж
 services.html, cases.html, blog.html, reviews.html, certificates.html — листинги (T4)
 case.html, post.html   детальные кейс и статья (T5 без price-from и form--compact)
-page.html, requisites.html, about.html — текстовые страницы (T6)
+page.html, delivery.html, requisites.html, about.html — текстовые страницы (T6)
 ui.html               UI-кит: все компоненты и состояния
 src/                  исходники страниц с <!-- @include partials/... -->
 partials/header.html  → header.php шаблона
@@ -123,7 +123,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 | reviews.html | `bitrix:news.list` ИБ «Отзывы» | `.rsum`, `.reviews-grid .review`, `.review-form` |
 | certificates.html | `bitrix:news.list` ИБ «Сертификаты» | `.grid--cards .cert-card` (фото 600×800, ссылка на PDF), `.docs` |
 | case.html, post.html | `bitrix:news.detail` | `.svc-hero` + `.article`; «другие кейсы / читайте также» — `news.list` с исключением текущего |
-| page.html, requisites.html | статические страницы раздела «Покупателям» | `.text-layout` = `.side-nav` (`bitrix:menu` left) + `.article` |
+| page.html, delivery.html, requisites.html | статические страницы раздела «Покупателям» | `.text-layout` = `.side-nav` (`bitrix:menu` left) + `.article` |
 | about.html | статическая страница | `.svc-hero` (фото 300 px, под ним `.metrics--grid`) + `.article` + блоки главной (преимущества, география) + сертификаты + кейсы |
 
 `.text-layout` ≤900px: боковое меню превращается в ряд чипов над текстом.
