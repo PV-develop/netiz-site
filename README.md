@@ -103,7 +103,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 
 | Блок | Компонент / источник | Разметка |
 |---|---|---|
-| Крошки, H1, лид, метрики, фото | `bitrix:news.detail` (ИБ «Услуги»); свойства METRIC_1..3, DETAIL_PICTURE | `.page-head`, `.svc-hero` (`--side` — фото справа), `.metrics` |
+| Крошки, H1, лид, метрики, фото | `bitrix:news.detail` (ИБ «Услуги»); свойства METRIC_1..3, DETAIL_PICTURE | `.page-head`, `.svc-hero`, `.metrics` |
 | Цена от | свойство PRICE_FROM | `.price-from` (`__value` или `__request`) |
 | Текст | DETAIL_TEXT из визуального редактора | `.article`: `__h2`, `__h3`, `p`, `__list`, `__table`, `__note`, `__figure`, `__quote`. Классы можно вешать через стили редактора или преобразовывать h2→`.article__h2` на выводе |
 | Этапы | свойство-таблица или статичный HTML в тексте | `.steps .step` (`--dark` — последний) |
@@ -124,7 +124,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 | certificates.html | `bitrix:news.list` ИБ «Сертификаты» | `.grid--cards .cert-card` (фото 600×800, ссылка на PDF), `.docs` |
 | case.html, post.html | `bitrix:news.detail` | `.svc-hero` + `.article`; «другие кейсы / читайте также» — `news.list` с исключением текущего |
 | page.html, requisites.html | статические страницы раздела «Покупателям» | `.text-layout` = `.side-nav` (`bitrix:menu` left) + `.article` |
-| about.html | статическая страница | `.svc-hero--side` + `.article` + блоки главной (преимущества, география) + сертификаты + кейсы |
+| about.html | статическая страница | `.svc-hero` (фото 300 px, под ним `.metrics--grid`) + `.article` + блоки главной (преимущества, география) + сертификаты + кейсы |
 
 `.text-layout` ≤900px: боковое меню превращается в ряд чипов над текстом.
 

@@ -825,7 +825,6 @@ ul { padding: 0; list-style: none; }
 /* ---------- 16. Детальная запись (T5): первый экран услуги, price-from, article, steps, таблица, врезка, цитата, form--compact, service-card ---------- */
 /* первый экран услуги: метрики + фото 16:10 */
 .svc-hero { margin-top: clamp(32px, 2.9vw, 56px); display: grid; gap: clamp(28px, 2.9vw, 56px); }
-.svc-hero--side { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: center; }
 .svc-hero__media { border-radius: var(--r-hero); overflow: hidden; height: 300px; background: var(--c-surface-2); }
 .svc-hero__media img { width: 100%; height: 100%; object-fit: cover; }
 
@@ -923,7 +922,6 @@ ul { padding: 0; list-style: none; }
 
 /* адаптив T5 */
 @media (max-width: 1100px) {
-  .svc-hero--side { grid-template-columns: minmax(0, 1fr); }
   .steps { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
 }
 @media (max-width: 760px) {
