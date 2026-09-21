@@ -53,6 +53,7 @@
   --gutter:     clamp(20px, 6.25vw, 120px);  /* поля страницы */
   --section:    clamp(72px, 6.8vw, 130px);   /* расстояние между секциями */
   --grid-gap:   clamp(16px, 1.5vw, 28px);
+  --cards-gap:  clamp(14px, 1.25vw, 24px);  /* между карточками в сетках */
   --card-pad:   clamp(22px, 1.5vw, 28px);
   --plate-pad:  clamp(28px, 5vw, 96px);      /* внутр. отступ больших плашек */
 
@@ -88,7 +89,7 @@ a { color: var(--c-brand); text-decoration: none; transition: color var(--t-fast
 a:hover { color: var(--c-brand-2); }
 button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
 input, textarea { font: inherit; color: inherit; }
-h1, h2, h3, h4, p, ul { margin: 0; }
+h1, h2, h3, h4, p, ul, blockquote, figure { margin: 0; }
 ul { padding: 0; list-style: none; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
@@ -117,7 +118,7 @@ ul { padding: 0; list-style: none; }
 
 /* сетки */
 .grid { display: grid; gap: var(--grid-gap); }
-.grid--cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: clamp(14px, 1.25vw, 24px); }
+.grid--cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: var(--cards-gap); }
 .grid--3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
 .grid--news { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
 .grid--features { grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: clamp(40px, 3.3vw, 64px) clamp(40px, 6.25vw, 120px); }
@@ -618,7 +619,7 @@ ul { padding: 0; list-style: none; }
 .product-card .btn { height: 46px; padding: 0 20px; font-size: 14px; }
 
 /* industry-card */
-.grid--industries { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: clamp(14px, 1.25vw, 24px); }
+.grid--industries { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: var(--cards-gap); }
 .industry-card { display: flex; flex-direction: column; padding: var(--card-pad); min-height: clamp(200px, 12.5vw, 240px); cursor: pointer; transition: background var(--t-fast); color: var(--c-ink); }
 .industry-card:hover { background: var(--c-surface-4); color: var(--c-ink); }
 .industry-card__icon { flex: none; width: 52px; height: 52px; border-radius: 50%; background: var(--c-brand-tint); color: var(--c-brand); display: flex; align-items: center; justify-content: center; margin-bottom: auto; }
@@ -782,7 +783,7 @@ ul { padding: 0; list-style: none; }
 .rbar__track { display: block; flex: 1; height: 8px; border-radius: 4px; background: var(--c-surface-2); overflow: hidden; }
 .rbar__fill { display: block; height: 100%; border-radius: 4px; background: var(--c-brand); }
 .rbar__n { width: 18px; text-align: right; color: var(--c-muted); }
-.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--grid-gap); margin-top: var(--grid-gap); }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: var(--cards-gap); margin-top: var(--grid-gap); }
 .review__rating { margin-bottom: 18px; }
 
 /* форма отзыва */
@@ -857,7 +858,7 @@ ul { padding: 0; list-style: none; }
 .article__list b { font-weight: 500; color: var(--c-ink); }
 
 /* steps: этапы работы */
-.steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(14px, 1.25vw, 24px); margin-top: clamp(28px, 2.4vw, 44px); }
+.steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: var(--cards-gap); margin-top: clamp(28px, 2.4vw, 44px); }
 .step { display: flex; flex-direction: column; padding: var(--card-pad); min-height: clamp(240px, 15.5vw, 300px); }
 .step__num { font: 300 var(--fs-num)/1 var(--f-head); letter-spacing: -.03em; color: var(--c-accent); }
 .step__body { margin-top: auto; padding-top: 28px; }
@@ -910,7 +911,7 @@ ul { padding: 0; list-style: none; }
 .form--compact .check { margin-top: 18px; }
 
 /* service-card: услуга в сетке */
-.grid--services { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: clamp(14px, 1.25vw, 24px); }
+.grid--services { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--cards-gap); }
 .service-card { display: flex; flex-direction: column; padding: var(--card-pad); min-height: clamp(260px, 17vw, 320px); cursor: pointer; color: var(--c-ink); transition: background var(--t-fast); }
 .service-card:hover { background: var(--c-surface-4); color: var(--c-ink); }
 .service-card__icon { flex: none; width: 52px; height: 52px; border-radius: 50%; background: var(--c-brand-tint); color: var(--c-brand); display: flex; align-items: center; justify-content: center; }
@@ -951,7 +952,7 @@ ul { padding: 0; list-style: none; }
 /* ---------- 17. Контакты (T7): contact-card, map-embed, route, contact-form, field--select, requisites, person-card ---------- */
 
 /* contact-card — крупная карточка одного способа связи */
-.grid--contacts { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(14px, 1.25vw, 24px); margin-top: clamp(32px, 2.9vw, 56px); }
+.grid--contacts { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--cards-gap); margin-top: clamp(32px, 2.9vw, 56px); }
 .contact-card { display: flex; flex-direction: column; padding: var(--card-pad); min-height: clamp(240px, 15vw, 290px); }
 .contact-card__icon { flex: none; width: 52px; height: 52px; border-radius: 50%; background: var(--c-brand-tint); color: var(--c-brand); display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
 .contact-card__label { font-size: var(--fs-xs); line-height: 1; color: var(--c-muted); }
@@ -1013,7 +1014,7 @@ a.contact-card__value:hover { color: var(--c-brand); }
 .req__copy.is-copied { background: var(--c-brand); color: #fff; }
 
 /* person-card — сотрудник отдела продаж */
-.grid--persons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: clamp(14px, 1.25vw, 24px); }
+.grid--persons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: var(--cards-gap); }
 .person-card { display: flex; flex-direction: column; padding: clamp(24px, 1.8vw, 34px); }
 .person-card__photo { flex: none; width: 72px; height: 72px; border-radius: 50%; overflow: hidden; background: var(--c-surface-2); }
 .person-card__photo img { width: 100%; height: 100%; object-fit: cover; }

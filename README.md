@@ -120,7 +120,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 | services.html | `bitrix:news.list` ИБ «Услуги» | `.grid--services .service-card` |
 | cases.html | `bitrix:news.list` ИБ «Кейсы» + фильтр по отрасли | `.tag-cloud` (ссылки на ?tag=), `.grid--3 .case-card`, `.pagination` |
 | blog.html | `bitrix:news.list` ИБ «Новости» | `.tag-cloud`, `.grid--news .news-card` |
-| reviews.html | `bitrix:news.list` ИБ «Отзывы» | `.rsum`, `.grid--3 .review`, `.review-form` |
+| reviews.html | `bitrix:news.list` ИБ «Отзывы» | `.rsum`, `.reviews-grid .review`, `.review-form` |
 | certificates.html | `bitrix:news.list` ИБ «Сертификаты» | `.grid--cards .cert-card` (фото 600×800, ссылка на PDF), `.docs` |
 | case.html, post.html | `bitrix:news.detail` | `.svc-hero` + `.article`; «другие кейсы / читайте также» — `news.list` с исключением текущего |
 | page.html, requisites.html | статические страницы раздела «Покупателям» | `.text-layout` = `.side-nav` (`bitrix:menu` left) + `.article` |
