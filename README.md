@@ -11,7 +11,7 @@ section.html          раздел каталога: фильтр, сортир�
 product.html          карточка товара: галерея, сводка покупки, табы, характеристики, отзывы
 service.html          детальная запись (услуга) — шаблон для кейса, статьи и текстовых страниц
 contacts.html         контакты: способы связи, карта, форма, реквизиты, отдел продаж
-services.html, cases.html, blog.html, reviews.html, certificates.html — листинги (T4)
+services.html, cases.html, blog.html, sales.html, reviews.html, certificates.html — листинги (T4)
 case.html, post.html   детальные кейс и статья (T5 без price-from и form--compact)
 page.html, delivery.html, requisites.html, about.html — текстовые страницы (T6)
 ui.html               UI-кит: все компоненты и состояния
@@ -120,6 +120,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 | services.html | `bitrix:news.list` ИБ «Услуги» | `.grid--services .service-card` |
 | cases.html | `bitrix:news.list` ИБ «Кейсы» + фильтр по отрасли | `.tag-cloud` (ссылки на ?tag=), `.grid--3 .case-card`, `.pagination` |
 | blog.html | `bitrix:news.list` ИБ «Новости» | `.tag-cloud`, `.grid--news .news-card` |
+| sales.html | `bitrix:news.list` ИБ «Акции»; вкладка «Архив» — фильтр по ACTIVE_TO | `.tag-cloud`, `.grid--news .news-card` + `__badges` (скидка — `chip--accent`), `.is-ended` для архива, `.empty` если акций нет; детальная — шаблон post.html |
 | reviews.html | `bitrix:news.list` ИБ «Отзывы» | `.rsum`, `.reviews-grid .review`, `.review-form` |
 | certificates.html | `bitrix:news.list` ИБ «Сертификаты» | `.grid--cards .cert-card` (фото 600×800, ссылка на PDF), `.docs` |
 | case.html, post.html | `bitrix:news.detail` | `.svc-hero` + `.article`; «другие кейсы / читайте также» — `news.list` с исключением текущего |

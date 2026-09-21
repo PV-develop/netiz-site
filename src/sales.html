@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Акции — НЭТИЗ</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page">
+
+<!-- @include partials/header.html -->
+
+<section class="container page-head">
+  <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span class="breadcrumbs__sep"></span><span>Акции</span></nav>
+  <h1 class="h1">Акции</h1>
+  <p class="lead">Скидки на партии, распродажа складских остатков и специальные условия на сборки по ТЗ. Условия каждой акции — на её странице.</p>
+
+  <!-- Вкладки: «Действующие» — акции с датой окончания в будущем, «Архив» — завершённые (?archive=Y) -->
+  <div class="tag-cloud">
+    <a class="tag is-active" href="sales.html">Действующие <span class="tag__count">3</span></a>
+    <a class="tag" href="#">Архив <span class="tag__count">7</span></a>
+  </div>
+  <!-- grid--news: bitrix:news.list (ИБ «Акции»), item ×N.
+       Бейджи — свойство «Размер скидки»; срок — ACTIVE_TO. Детальная — шаблон post.html -->
+  <div class="grid grid--news" style="margin-top:clamp(32px,2.9vw,56px)">
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/hero.jpg" alt="" width="800" height="500" loading="lazy"><span class="news-card__badges"><span class="chip chip--accent">−10%</span></span></a>
+      <time class="news-card__date" datetime="2026-10-31">до 31 октября 2026</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">LiFePO4 на замену свинцовым АКБ</a></h3>
+      <p class="news-card__text">Скидка на батареи Unique Energy 12 и 24 В для ИБП, охранных систем и телеком-шкафов.</p>
+      <a class="link-arrow news-card__more" href="post.html">Условия акции <span class="link-arrow__arrow">→</span></a>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/news-chem.jpg" alt="" width="800" height="500" loading="lazy"><span class="news-card__badges"><span class="chip chip--accent">до −40%</span><span class="chip">Распродажа</span></span></a>
+      <time class="news-card__date">пока есть на складе</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Остатки элементов Li-SOCl₂</a></h3>
+      <p class="news-card__text">ER14505, ER26500, ER34615 — полный срок хранения, протокол входного контроля на каждую партию.</p>
+      <a class="link-arrow news-card__more" href="post.html">Условия акции <span class="link-arrow__arrow">→</span></a>
+    </article>
+    <article class="news-card">
+      <a class="news-card__media" href="post.html"><img src="assets/img/case-hydro.jpg" alt="" width="800" height="500" loading="lazy"><span class="news-card__badges"><span class="chip chip--accent">−15%</span></span></a>
+      <time class="news-card__date">постоянно</time>
+      <h3 class="news-card__title"><a href="post.html" style="color:inherit">Скидка на партию от 100 штук</a></h3>
+      <p class="news-card__text">На любые позиции каталога в одном заказе. Для постоянных заказчиков — фиксируем цену в договоре.</p>
+      <a class="link-arrow news-card__more" href="post.html">Условия акции <span class="link-arrow__arrow">→</span></a>
+    </article>
+  </div>
+
+  <!-- Состояние «нет действующих акций»: выводится вместо сетки, когда список пуст
+  <div class="empty" style="margin-top:clamp(32px,2.9vw,56px)">
+    <div class="empty__title">Сейчас действующих акций нет</div>
+    <p class="empty__text">Подпишитесь на рассылку внизу страницы — сообщим о новых скидках первыми.</p>
+  </div>
+  -->
+</section>
+
+<!-- @include partials/block-catalog.html -->
+
+<!-- @include partials/lead-form.html -->
+
+<!-- @include partials/footer.html -->
+
+</div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
