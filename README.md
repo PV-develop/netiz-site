@@ -55,6 +55,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 | Hero | статика в шаблоне или ИБ «Баннеры» | `.hero` |
 | Преимущества | статика / ИБ «Преимущества» | `.feature` |
 | Разделы каталога | `bitrix:catalog.section.list` | `.cat-card`; иконка — свойство раздела (SVG) |
+| Отраслевые решения | `bitrix:news.list`, ИБ «Отрасли» (флаг «На главную», 5 шт.) | `.solution-card`; фото PREVIEW_PICTURE 3:2, PREVIEW_TEXT, свойство CHEMISTRY (множ.) → `.chip`. Последняя `.solution-card--dark` «30+» — статика, теги `.solution-card__tag` |
 | Кейсы | `bitrix:news.list`, ИБ «Кейсы» | `.case-card`; свойства TAG, METRIC_1(_LABEL), METRIC_2(_LABEL) |
 | Отзывы | `bitrix:news.list`, ИБ «Отзывы» | `.review` |
 | География | статика | `.plate--soft` + `partials/map-russia.svg` |
@@ -168,6 +169,7 @@ build.py              python3 build.py — пересобрать *.html из sr
 | Шапка статьи (`.svc-hero__media--wide`) | 2400×1050 | 16:7 | |
 | О компании на главной | 1520×1320 | 760:660 | |
 | Иллюстрация в статье | 1640×920 | 16:9 | |
+| Отраслевое решение на главной | 1200×800 | 3:2 | |
 | Кейсы, новости, акции (PREVIEW_PICTURE) | 1200×750 | 16:10 | `CFile::ResizeImageGet` |
 | Сертификат | 900×1200 | 3:4 | |
 | Товар в сетке | 800×800 | 1:1 | на белом фоне, `object-fit: contain` |

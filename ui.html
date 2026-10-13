@@ -305,6 +305,23 @@
       <p class="news-card__text">Фото в ч/б, заголовок приглушён.</p>
     </article>
   </div>
+  <div class="grid grid--solutions" style="margin-top:var(--grid-gap)">
+    <a class="card solution-card" href="#">
+      <span class="solution-card__media"><img src="assets/img/placeholder-600x400.svg" alt="" width="600" height="400"></span>
+      <span class="solution-card__body">
+        <span class="solution-card__title">solution-card · Отрасль</span>
+        <span class="solution-card__text">Задача отрасли в одно-два предложения.</span>
+        <span class="solution-card__chips"><span class="chip">Li-SOCl<sub>2</sub></span><span class="chip">LiFePO4</span></span>
+        <span class="link-arrow solution-card__more">Решения для отрасли <span class="link-arrow__arrow">→</span></span>
+      </span>
+    </a>
+    <a class="card solution-card solution-card--dark" href="#">
+      <span class="solution-card__num">30+</span>
+      <span class="solution-card__title">solution-card--dark</span>
+      <span class="solution-card__tags"><span class="solution-card__tag">solution-card__tag</span><span class="solution-card__tag">Связь</span></span>
+      <span class="link-arrow solution-card__more">Все отрасли <span class="link-arrow__arrow">→</span></span>
+    </a>
+  </div>
 
   <div class="kit-h">Аккордеон, хлебные крошки, пагинация, пустая выдача</div>
   <nav class="breadcrumbs" aria-label="Хлебные крошки"><a href="#">Главная</a><span class="breadcrumbs__sep"></span><a href="#">Каталог</a><span class="breadcrumbs__sep"></span><span>Батареи литиевые</span></nav>
@@ -508,6 +525,7 @@
         <tr><td>Шапка статьи (post) <code>.svc-hero__media--wide</code></td><td>2400×1050</td><td>16:7, постоянные</td><td>1680×735</td><td>Ничего, если загрузить в пропорции 16:7</td></tr>
         <tr><td>Фото «О компании» на главной <code>.about__photo</code></td><td>1520×1320</td><td>760:660 (≈ 1,15:1)</td><td>760×660</td><td>Ничего в этой пропорции; фото 4:3 потеряет ~7 % с каждого бока</td></tr>
         <tr><td>Иллюстрация в статье <code>.article__media</code></td><td>1640×920</td><td>16:9</td><td>820×461</td><td>Ничего в пропорции 16:9</td></tr>
+        <tr><td>Отраслевое решение <code>.solution-card__media</code></td><td>1200×800</td><td>3:2</td><td>~430×287</td><td>Ничего в пропорции 3:2</td></tr>
         <tr><td>Кейс, новость, акция <code>.case-card__media</code> <code>.news-card__media</code></td><td>1200×750</td><td>16:10</td><td>541×338</td><td>Ничего в пропорции 16:10</td></tr>
         <tr><td>Сертификат <code>.cert-card__media</code></td><td>900×1200</td><td>3:4</td><td>442×589</td><td>Скан A4 потеряет ~3 % сверху и снизу — поля документа</td></tr>
         <tr><td>Товар в сетке <code>.product-card__media</code></td><td>800×800</td><td>1:1</td><td>360×360</td><td>Вписывается, не режется. Белый или прозрачный фон, товар с полями</td></tr>

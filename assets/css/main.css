@@ -283,6 +283,31 @@ ul { padding: 0; list-style: none; }
 .case-card__metrics { width: 100%; display: flex; flex-wrap: wrap; gap: 20px 40px; margin-top: auto; padding-top: 24px; border-top: 1px solid var(--c-line); }
 .case-card__more { margin-top: 26px; }
 
+/* карточка отраслевого решения (главная) + тёмная «30+ отраслей» */
+.grid--solutions { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--cards-gap); }
+.solution-card { display: flex; flex-direction: column; overflow: hidden; transition: box-shadow var(--t-fast); }
+.solution-card:hover { box-shadow: var(--shadow-card); color: var(--c-ink); }
+.solution-card__media { flex: none; aspect-ratio: 3/2; background: var(--c-surface-2); }
+.solution-card__media img { width: 100%; height: 100%; object-fit: cover; }
+.solution-card__body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; padding: var(--card-pad); }
+.solution-card__title { font: 400 var(--fs-card)/1.2 var(--f-head); letter-spacing: -.02em; }
+.solution-card__text { margin-top: 14px; font-size: var(--fs-sm); line-height: 1.6; color: var(--c-ink-2); }
+.solution-card__chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.solution-card__chips .chip { padding: 8px 14px; text-transform: none; }
+.solution-card__chips sub { font-size: .75em; line-height: 0; }   /* Li-SOCl₂ */
+.solution-card__more { margin-top: auto; padding-top: 24px; }
+.solution-card--dark { background: var(--c-dark-2); color: #fff; padding: var(--card-pad); }
+.solution-card--dark:hover { color: #fff; }
+.solution-card__num { font: 400 clamp(64px, 5.5vw, 104px)/1 var(--f-head); letter-spacing: -.03em; color: var(--c-accent); }
+.solution-card--dark .solution-card__title { margin-top: 16px; }
+.solution-card__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+.solution-card__tag { padding: 8px 14px; border-radius: var(--r-pill); border: 1px solid rgba(255,255,255,.22); font-size: 14px; line-height: 1.2; }
+.solution-card--dark .solution-card__more { padding-top: 32px; }
+.solution-card--dark .link-arrow { color: #fff; }
+@media (max-width: 1100px) { .grid--solutions { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 900px)  { .grid--solutions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px)  { .grid--solutions { grid-template-columns: minmax(0, 1fr); } }
+
 /* метрика: цифра + подпись */
 .metric__value { font: 400 30px/1 var(--f-head); }
 .metric__value--accent { color: var(--c-accent); }
