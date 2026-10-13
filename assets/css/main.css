@@ -971,6 +971,8 @@ a.contact-card__value:hover { color: var(--c-brand); }
 .contact-card__note { margin-top: 12px; font-size: var(--fs-sm); line-height: 1.5; color: var(--c-ink-2); }
 .contact-card__foot { margin-top: auto; padding-top: 22px; }
 .contact-card__messengers { display: flex; gap: 10px; }
+.contact-card__messengers .icon-btn { color: var(--c-ink); }
+.contact-card__messengers .icon-btn:hover { color: var(--c-brand); }
 .contact-card__messengers .icon-btn__circle { width: 44px; height: 44px; }
 
 /* map-embed — контейнер под Яндекс.Карту */
